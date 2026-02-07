@@ -42,6 +42,7 @@ chicago-arthouse-movies/
 │   └── movies.json    # Generated schedule
 ├── site/
 │   ├── index.html     # Generated page
+│   ├── about.html     # About page
 │   └── styles.css
 ├── templates/
 │   └── index_template.html

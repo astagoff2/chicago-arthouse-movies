@@ -98,6 +98,10 @@ def scrape_siskel():
 
             title = clean_text(title)
 
+            # Convert from ALL CAPS to Title Case
+            if title.isupper():
+                title = title.title()
+
             # Try to find the time - usually in a sibling or nearby element
             time_text = None
             li_text = li.get_text()
