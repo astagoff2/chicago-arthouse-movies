@@ -1,4 +1,4 @@
-name: Build and Deploy
+  name: Build and Deploy
 
   on:
     schedule:
@@ -21,6 +21,8 @@ name: Build and Deploy
           with:
             python-version: '3.11'
         - run: pip install -r requirements.txt
+        - run: playwright install chromium
+        - run: playwright install-deps chromium
         - run: python build.py
         - uses: peaceiris/actions-gh-pages@v4
           with:
