@@ -256,6 +256,27 @@ main {
     font-style: italic;
 }
 
+/* About Page */
+.about-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.about-content p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+.about-content a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.about-content a:hover {
+    text-decoration: underline;
+}
+
 /* Footer */
 footer {
     border-top: 1px solid var(--border);
