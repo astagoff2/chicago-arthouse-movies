@@ -1,6 +1,6 @@
 # Chicago Art House Cinema
 
-A minimal, elegant website showing weekly movie schedules from Chicago's independent and repertory theaters.
+A website showing weekly movie schedules from Chicago's independent and repertory theaters.
 
 **Live site:** https://astagoff2.github.io/chicago-arthouse-movies/
 
@@ -31,7 +31,7 @@ open site/index.html
 
 ## Automated Updates
 
-To enable daily automatic updates, create `.github/workflows/deploy.yml` with the contents from `workflow-template.yml`. The site will rebuild daily at 6am Chicago time.
+The site will rebuild daily at 6am Chicago time.
 
 ## Tech Stack
 
