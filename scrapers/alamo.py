@@ -1,6 +1,5 @@
 """Scraper for Alamo Drafthouse Wrigleyville."""
 from .utils import make_request, clean_text, logger
-import re
 import json
 from datetime import datetime
 
@@ -13,67 +12,67 @@ THEATER_INFO = {
 
 
 def scrape_alamo():
-    """Scrape Alamo Drafthouse Wrigleyville schedule.
-
-    Note: Alamo uses JavaScript rendering, so this scraper attempts to
-    find any embedded JSON data or API endpoints. If that fails, it
-    returns a placeholder entry directing users to the website.
-    """
+    """Scrape Alamo Drafthouse Wrigleyville schedule via their API."""
     movies = []
-    base_url = 'https://drafthouse.com'
-    theater_url = f'{base_url}/chicago/theater/wrigleyville'
 
-    # Try to fetch the page
-    resp = make_request(theater_url)
+    # Alamo has a JSON API for their schedule
+    api_url = 'https://drafthouse.com/s/mother/v2/schedule/market/chicago'
+
+    resp = make_request(api_url)
+    if not resp:
+        logger.error("Failed to fetch Alamo Drafthouse API")
+        return movies
+
+    try:
+        data = resp.json()
+    except json.JSONDecodeError:
+        logger.error("Failed to parse Alamo Drafthouse JSON")
+        return movies
 
     today = datetime.now().strftime('%Y-%m-%d')
+    seen = set()
 
-    if resp:
-        # Look for embedded JSON data (some sites include this for SEO)
-        text = resp.text
+    # The API returns data.presentations
+    inner = data.get('data', data)
+    presentations = inner.get('presentations', [])
 
-        # Try to find JSON-LD or embedded data
-        json_match = re.search(r'<script type="application/ld\+json">(.*?)</script>', text, re.DOTALL)
-        if json_match:
-            try:
-                data = json.loads(json_match.group(1))
-                # Parse if it contains movie info
-                if isinstance(data, dict) and 'event' in str(data).lower():
-                    logger.info("Found JSON-LD data in Alamo page")
-            except json.JSONDecodeError:
-                pass
+    for item in presentations:
+        # Get show info - title is nested in 'show' object
+        show = item.get('show', {})
+        if not isinstance(show, dict):
+            continue
 
-        # Look for any movie titles in the raw HTML
-        title_pattern = r'"name"\s*:\s*"([^"]+)"'
-        titles = re.findall(title_pattern, text)
+        title = show.get('title', '')
+        if not title or title in seen:
+            continue
 
-        seen = set()
-        for title in titles:
-            if len(title) > 3 and len(title) < 80 and title not in seen:
-                # Skip non-movie items
-                skip = ['alamo', 'drafthouse', 'wrigleyville', 'chicago', 'menu',
-                        'gift', 'membership', 'victory', 'season pass']
-                if any(s in title.lower() for s in skip):
-                    continue
-                seen.add(title)
+        # Skip non-movie items
+        skip = ['menu', 'gift', 'membership', 'party', 'rental', 'private']
+        if any(s in title.lower() for s in skip):
+            continue
 
-                movies.append({
-                    'title': title,
-                    'theater': THEATER_INFO['name'],
-                    'theater_url': THEATER_INFO['url'],
-                    'address': THEATER_INFO['address'],
-                    'date': today,
-                    'times': ['See website'],
-                    'format': None,
-                    'director': None,
-                    'year': None,
-                    'ticket_url': theater_url
-                })
+        seen.add(title)
 
-    # If we couldn't scrape anything, the site likely needs JavaScript
-    # Don't add a placeholder - just return empty and let other theaters show
-    if not movies:
-        logger.warning("Alamo Drafthouse requires JavaScript - no movies scraped")
+        # Get year and other info
+        year = show.get('year')
+        certification = show.get('certification')
+
+        # Build ticket URL
+        slug = item.get('slug') or show.get('slug', '')
+        ticket_url = f"https://drafthouse.com/chicago/show/{slug}" if slug else THEATER_INFO['url']
+
+        movies.append({
+            'title': title,
+            'theater': THEATER_INFO['name'],
+            'theater_url': THEATER_INFO['url'],
+            'address': THEATER_INFO['address'],
+            'date': today,
+            'times': ['See website'],
+            'format': None,
+            'director': None,
+            'year': year,
+            'ticket_url': ticket_url
+        })
 
     logger.info(f"Alamo Drafthouse: Found {len(movies)} screenings")
     return movies
@@ -82,4 +81,4 @@ def scrape_alamo():
 if __name__ == '__main__':
     results = scrape_alamo()
     for m in results:
-        print(f"{m['date']} - {m['title']}")
+        print(f"{m['date']} - {m['title']} ({m.get('year', '?')})")
