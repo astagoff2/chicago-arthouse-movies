@@ -1,6 +1,6 @@
 """Scraper for Logan Theatre."""
 from bs4 import BeautifulSoup
-from .utils import make_request, parse_date, parse_time, clean_text, logger
+from .utils import make_request, parse_time, clean_text, logger
 import re
 from datetime import datetime
 
@@ -23,79 +23,79 @@ def scrape_logan():
         return movies
 
     soup = BeautifulSoup(resp.text, 'lxml')
-    current_year = datetime.now().year
+    today = datetime.now().strftime('%Y-%m-%d')
 
-    # Logan has movie cards with posters and showtimes
-    # Look for movie containers
-    movie_containers = soup.find_all(['div', 'article'], class_=re.compile(r'movie|film|show', re.I))
+    # Logan shows movies with titles and showtimes
+    # Look for movie title links - they typically link to movie detail pages
 
-    if not movie_containers:
-        # Try finding by structure - look for items with images and showtimes
-        movie_containers = soup.find_all('div', recursive=True)
+    # Find all anchor tags that could be movie titles
+    # Movie titles are usually in links that aren't navigation
+    all_links = soup.find_all('a', href=True)
 
     seen = set()
 
-    for container in movie_containers:
-        # Look for title
-        title_elem = container.find(['h2', 'h3', 'h4'])
-        if not title_elem:
+    for link in all_links:
+        href = link.get('href', '')
+        title = clean_text(link.get_text())
+
+        # Skip navigation, empty, or short titles
+        if not title or len(title) < 3:
             continue
 
-        title = clean_text(title_elem.get_text())
-        if not title or len(title) < 2:
+        # Skip obvious navigation
+        nav_words = ['menu', 'home', 'movies', 'events', 'membership', 'food', 'drink',
+                     'info', 'contact', 'about', 'facebook', 'twitter', 'instagram',
+                     'privacy', 'terms', 'buy tickets', 'trailer', 'more info']
+        if title.lower() in nav_words or any(n in title.lower() for n in ['@', 'http', '.com']):
             continue
 
-        # Skip if we've seen this
+        # Look for movie-like patterns (avoid times, prices)
+        if re.match(r'^\d{1,2}:\d{2}', title) or re.match(r'^\$', title):
+            continue
+
+        # Get parent to find associated times
+        parent = link.find_parent(['div', 'li', 'article', 'section'])
+        if not parent:
+            continue
+
+        parent_text = clean_text(parent.get_text())
+
+        # Find showtimes in parent - pattern like "1:00p" or "7:00 PM"
+        time_pattern = r'(\d{1,2}:\d{2}\s*[ap]\.?m?\.?)'
+        time_matches = re.findall(time_pattern, parent_text, re.I)
+
+        if not time_matches:
+            continue
+
+        times = []
+        for t in time_matches[:6]:  # Limit to 6 times
+            normalized = parse_time(t)
+            if normalized and normalized not in times:
+                times.append(normalized)
+
+        if not times:
+            continue
+
+        # Check if this looks like a real movie title (has reasonable length, not all caps nav)
         if title in seen:
             continue
-
-        text = clean_text(container.get_text())
-
-        # Skip navigation elements
-        if title.lower() in ['movies', 'events', 'membership', 'food', 'drink', 'info']:
+        if len(title) > 100:  # Too long, probably grabbed extra text
             continue
 
         seen.add(title)
 
-        # Find showtimes
-        time_matches = re.findall(r'(\d{1,2}:\d{2}\s*(?:pm|am)?)', text, re.I)
-        times = [parse_time(t) for t in time_matches if t]
-
-        # Find rating
-        rating_match = re.search(r'\b(G|PG|PG-13|R|NC-17|NR)\b', text)
-
-        # Find runtime
-        runtime_match = re.search(r'(\d+)\s*(?:min|minutes)', text, re.I)
-
-        # Look for dates in the container
-        date_text = container.find(class_=re.compile(r'date', re.I))
-        date_str = None
-        if date_text:
-            date_str = parse_date(clean_text(date_text.get_text()), current_year)
-
-        if not date_str:
-            # Default to today
-            date_str = datetime.now().strftime('%Y-%m-%d')
-
-        # Get link to movie page
-        link = container.find('a', href=True)
-        movie_url = link['href'] if link else base_url
-        if movie_url and not movie_url.startswith('http'):
-            movie_url = base_url + movie_url
-
-        if times:  # Only add if we found showtimes
-            movies.append({
-                'title': title,
-                'theater': THEATER_INFO['name'],
-                'theater_url': THEATER_INFO['url'],
-                'address': THEATER_INFO['address'],
-                'date': date_str,
-                'times': times if times else ['See website'],
-                'format': None,
-                'director': None,
-                'year': None,
-                'ticket_url': movie_url
-            })
+        movies.append({
+            'title': title,
+            'theater': THEATER_INFO['name'],
+            'theater_url': THEATER_INFO['url'],
+            'address': THEATER_INFO['address'],
+            'date': today,  # Logan shows today's schedule
+            'times': times,
+            'format': None,
+            'director': None,
+            'year': None,
+            'ticket_url': base_url
+        })
 
     logger.info(f"Logan Theatre: Found {len(movies)} screenings")
     return movies

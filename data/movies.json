@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-07T14:47:47.743315",
+  "last_updated": "2026-02-07T15:25:45.673785",
   "week_of": "2026-02-07",
   "movies": [
+    {
+      "title": "Museum Hours",
+      "theater": "Doc Films",
+      "theater_url": "https://docfilms.org",
+      "address": "Max Palevsky Cinema, Ida Noyes Hall, 1212 E 59th St",
+      "date": "2026-02-07",
+      "times": [
+        "4:00 PM"
+      ],
+      "format": "DCP",
+      "director": null,
+      "year": 2012,
+      "ticket_url": "https://docfilms.org"
+    },
+    {
+      "title": "Black Narcissus",
+      "theater": "Doc Films",
+      "theater_url": "https://docfilms.org",
+      "address": "Max Palevsky Cinema, Ida Noyes Hall, 1212 E 59th St",
+      "date": "2026-02-08",
+      "times": [
+        "4:00 PM"
+      ],
+      "format": "DCP",
+      "director": null,
+      "year": 1947,
+      "ticket_url": "https://docfilms.org"
+    },
     {
       "title": "West Side Story (2021)",
       "theater": "Music Box Theatre",
@@ -101,258 +129,6 @@
       "ticket_url": "https://musicboxtheatre.com/films-and-events/joe-dirt"
     },
     {
-      "title": "Union Pacific",
-      "theater": "Music Box Theatre",
-      "theater_url": "https://musicboxtheatre.com",
-      "address": "3733 N Southport Ave",
-      "date": "2026-02-15",
-      "times": [
-        "See website"
-      ],
-      "format": "35mm",
-      "director": null,
-      "year": null,
-      "ticket_url": "https://musicboxtheatre.com/films-and-events/union-pacific"
-    },
-    {
-      "title": "Spider-Man: Into the Spider-Verse",
-      "theater": "Music Box Theatre",
-      "theater_url": "https://musicboxtheatre.com",
-      "address": "3733 N Southport Ave",
-      "date": "2026-02-16",
-      "times": [
-        "See website"
-      ],
-      "format": "3D DCP",
-      "director": null,
-      "year": null,
-      "ticket_url": "https://musicboxtheatre.com/films-and-events/spider-man-into-the-spider-verse"
-    },
-    {
-      "title": "Written on the Wind",
-      "theater": "Music Box Theatre",
-      "theater_url": "https://musicboxtheatre.com",
-      "address": "3733 N Southport Ave",
-      "date": "2026-02-17",
-      "times": [
-        "See website"
-      ],
-      "format": "35mm",
-      "director": null,
-      "year": null,
-      "ticket_url": "https://musicboxtheatre.com/films-and-events/written-on-the-wind"
-    },
-    {
-      "title": "Strange and Found",
-      "theater": "Music Box Theatre",
-      "theater_url": "https://musicboxtheatre.com",
-      "address": "3733 N Southport Ave",
-      "date": "2026-02-18",
-      "times": [
-        "See website"
-      ],
-      "format": null,
-      "director": null,
-      "year": null,
-      "ticket_url": "https://musicboxtheatre.com/films-and-events/strange-and-found"
-    },
-    {
-      "title": "White Chicks",
-      "theater": "Music Box Theatre",
-      "theater_url": "https://musicboxtheatre.com",
-      "address": "3733 N Southport Ave",
-      "date": "2026-02-19",
-      "times": [
-        "See website"
-      ],
-      "format": "DCP",
-      "director": null,
-      "year": null,
-      "ticket_url": "https://musicboxtheatre.com/films-and-events/white-chicks"
-    },
-    {
-      "title": "2026 Oscar Nominated Animated Short Films",
-      "theater": "Music Box Theatre",
-      "theater_url": "https://musicboxtheatre.com",
-      "address": "3733 N Southport Ave",
-      "date": "2026-02-20",
-      "times": [
-        "See website"
-      ],
-      "format": "DCP",
-      "director": null,
-      "year": null,
-      "ticket_url": "https://musicboxtheatre.com/films-and-events/2026-oscar-nominated-animated-short-films"
-    },
-    {
-      "title": "2026 Oscar Nominated Live Action Short Films",
-      "theater": "Music Box Theatre",
-      "theater_url": "https://musicboxtheatre.com",
-      "address": "3733 N Southport Ave",
-      "date": "2026-02-20",
-      "times": [
-        "See website"
-      ],
-      "format": "DCP",
-      "director": null,
-      "year": null,
-      "ticket_url": "https://musicboxtheatre.com/films-and-events/2026-oscar-nominated-live-action-short-films"
-    },
-    {
-      "title": "Iced",
-      "theater": "Music Box Theatre",
-      "theater_url": "https://musicboxtheatre.com",
-      "address": "3733 N Southport Ave",
-      "date": "2026-02-20",
-      "times": [
-        "See website"
-      ],
-      "format": "DCP",
-      "director": null,
-      "year": null,
-      "ticket_url": "https://musicboxtheatre.com/films-and-events/iced"
-    },
-    {
-      "title": "Blade",
-      "theater": "Music Box Theatre",
-      "theater_url": "https://musicboxtheatre.com",
-      "address": "3733 N Southport Ave",
-      "date": "2026-02-20",
-      "times": [
-        "See website"
-      ],
-      "format": "35mm",
-      "director": null,
-      "year": null,
-      "ticket_url": "https://musicboxtheatre.com/films-and-events/blade"
-    },
-    {
-      "title": "Space is the Place",
-      "theater": "Music Box Theatre",
-      "theater_url": "https://musicboxtheatre.com",
-      "address": "3733 N Southport Ave",
-      "date": "2026-02-21",
-      "times": [
-        "See website"
-      ],
-      "format": "DCP",
-      "director": null,
-      "year": null,
-      "ticket_url": "https://musicboxtheatre.com/films-and-events/space-is-the-place"
-    },
-    {
-      "title": "The Furies",
-      "theater": "Music Box Theatre",
-      "theater_url": "https://musicboxtheatre.com",
-      "address": "3733 N Southport Ave",
-      "date": "2026-02-21",
-      "times": [
-        "See website"
-      ],
-      "format": "16mm",
-      "director": null,
-      "year": null,
-      "ticket_url": "https://musicboxtheatre.com/films-and-events/the-furies"
-    },
-    {
-      "title": "Frostbiter",
-      "theater": "Music Box Theatre",
-      "theater_url": "https://musicboxtheatre.com",
-      "address": "3733 N Southport Ave",
-      "date": "2026-02-21",
-      "times": [
-        "See website"
-      ],
-      "format": "DCP",
-      "director": null,
-      "year": null,
-      "ticket_url": "https://musicboxtheatre.com/films-and-events/frostbiter"
-    },
-    {
-      "title": "Safe",
-      "theater": "Music Box Theatre",
-      "theater_url": "https://musicboxtheatre.com",
-      "address": "3733 N Southport Ave",
-      "date": "2026-02-22",
-      "times": [
-        "See website"
-      ],
-      "format": "DCP",
-      "director": null,
-      "year": null,
-      "ticket_url": "https://musicboxtheatre.com/films-and-events/safe"
-    },
-    {
-      "title": "Life within the Lens",
-      "theater": "Music Box Theatre",
-      "theater_url": "https://musicboxtheatre.com",
-      "address": "3733 N Southport Ave",
-      "date": "2026-02-23",
-      "times": [
-        "See website"
-      ],
-      "format": "DCP",
-      "director": null,
-      "year": null,
-      "ticket_url": "https://musicboxtheatre.com/films-and-events/life-within-the-lens"
-    },
-    {
-      "title": "Sirat",
-      "theater": "Music Box Theatre",
-      "theater_url": "https://musicboxtheatre.com",
-      "address": "3733 N Southport Ave",
-      "date": "2026-03-06",
-      "times": [
-        "See website"
-      ],
-      "format": "DCP",
-      "director": null,
-      "year": null,
-      "ticket_url": "https://musicboxtheatre.com/films-and-events/sirat"
-    },
-    {
-      "title": "Borderlands",
-      "theater": "Music Box Theatre",
-      "theater_url": "https://musicboxtheatre.com",
-      "address": "3733 N Southport Ave",
-      "date": "2026-02-26",
-      "times": [
-        "See website"
-      ],
-      "format": "DCP",
-      "director": null,
-      "year": null,
-      "ticket_url": "https://musicboxtheatre.com/films-and-events/borderlands"
-    },
-    {
-      "title": "The Night Walker",
-      "theater": "Music Box Theatre",
-      "theater_url": "https://musicboxtheatre.com",
-      "address": "3733 N Southport Ave",
-      "date": "2026-02-27",
-      "times": [
-        "See website"
-      ],
-      "format": "35mm",
-      "director": null,
-      "year": null,
-      "ticket_url": "https://musicboxtheatre.com/films-and-events/the-night-walker"
-    },
-    {
-      "title": "The Brother From Another Planet",
-      "theater": "Music Box Theatre",
-      "theater_url": "https://musicboxtheatre.com",
-      "address": "3733 N Southport Ave",
-      "date": "2026-02-28",
-      "times": [
-        "See website"
-      ],
-      "format": "35mm",
-      "director": null,
-      "year": null,
-      "ticket_url": "https://musicboxtheatre.com/films-and-events/the-brother-from-another-planet"
-    },
-    {
       "title": "Critic\u2019s Cut 2025",
       "theater": "Facets",
       "theater_url": "https://www.facets.org",
@@ -365,20 +141,6 @@
       "director": null,
       "year": null,
       "ticket_url": "https://facets.org/programs/critics-cut-2025-the-facets-50-wrap-party/"
-    },
-    {
-      "title": "Film Camps",
-      "theater": "Facets",
-      "theater_url": "https://www.facets.org",
-      "address": "1517 W Fullerton Ave",
-      "date": "2026-02-07",
-      "times": [
-        "See website"
-      ],
-      "format": null,
-      "director": null,
-      "year": null,
-      "ticket_url": "https://facets.org/family/film-camps/"
     }
   ]
 }

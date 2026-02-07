@@ -3,7 +3,7 @@
 import json
 import os
 import sys
-from datetime import datetime
+from datetime import datetime, timedelta
 from collections import defaultdict
 from pathlib import Path
 
@@ -30,6 +30,22 @@ def format_day(date_str):
         return date_str
 
 
+def filter_to_week(movies):
+    """Filter movies to only include this week (next 7 days)."""
+    today = datetime.now().date()
+    week_end = today + timedelta(days=7)
+
+    filtered = []
+    for movie in movies:
+        try:
+            movie_date = datetime.strptime(movie['date'], '%Y-%m-%d').date()
+            if today <= movie_date <= week_end:
+                filtered.append(movie)
+        except (ValueError, TypeError):
+            continue
+    return filtered
+
+
 def run_scrapers():
     """Run all scrapers and collect movies."""
     all_movies = []
@@ -50,6 +66,10 @@ def run_scrapers():
             print(f"  Found {len(movies)} screenings")
         except Exception as e:
             print(f"  Error scraping {name}: {e}")
+
+    # Filter to current week only
+    all_movies = filter_to_week(all_movies)
+    print(f"\nFiltered to {len(all_movies)} screenings this week")
 
     return all_movies
 
