@@ -69,22 +69,22 @@ body::before {
 header {
     position: relative;
     z-index: 1;
-    padding: 3rem 2rem 2rem;
+    padding: 2rem 2rem 1.5rem;
     text-align: center;
-    background: rgba(255, 255, 255, 0.92);
+    background: rgba(255, 255, 255, 0.95);
     border-bottom: 1px solid var(--border);
 }
 
 header h1 {
     font-family: var(--serif);
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 400;
     letter-spacing: -0.02em;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
 }
 
 header .subtitle {
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     color: var(--text-muted);
     text-transform: uppercase;
     letter-spacing: 0.15em;
@@ -92,13 +92,13 @@ header .subtitle {
 }
 
 .header-nav {
-    margin-top: 1.25rem;
-    padding-top: 1rem;
+    margin-top: 1rem;
+    padding-top: 0.75rem;
     border-top: 1px solid var(--border);
 }
 
 .header-nav a {
-    font-size: 0.875rem;
+    font-size: 0.8125rem;
     color: var(--text);
     text-decoration: none;
     letter-spacing: 0.05em;
@@ -113,62 +113,96 @@ header .subtitle {
 main {
     position: relative;
     z-index: 1;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 2rem 1.5rem;
-    background: rgba(255, 255, 255, 0.92);
+    padding: 1.5rem 1.5rem;
+    background: rgba(255, 255, 255, 0.95);
     min-height: 60vh;
 }
 
 /* Week Info */
 .week-info {
     text-align: center;
-    margin-bottom: 3rem;
-    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
     border-bottom: 1px solid var(--border);
 }
 
 .week-label {
     font-family: var(--serif);
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-style: italic;
     color: var(--text);
 }
 
 .updated {
-    font-size: 0.75rem;
+    font-size: 0.6875rem;
     color: var(--text-light);
     margin-top: 0.25rem;
 }
 
 /* Day Sections */
 .day-section {
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
 }
 
 .day-header {
     font-family: var(--serif);
-    font-size: 1.5rem;
+    font-size: 1.125rem;
     font-weight: 400;
-    margin-bottom: 1.5rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid var(--border);
+    padding: 0.5rem 0;
+    border-bottom: 2px solid var(--text);
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
 }
 
-/* Screenings */
+.day-header:hover {
+    color: var(--accent);
+}
+
+.day-header::after {
+    content: '−';
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: var(--text-muted);
+}
+
+.day-count {
+    font-family: var(--sans);
+    font-size: 0.75rem;
+    color: var(--text-light);
+    font-weight: 400;
+    margin-left: 0.5rem;
+}
+
+/* Collapsed state */
+.day-section.collapsed .screenings {
+    display: none;
+}
+
+.day-section.collapsed .day-header::after {
+    content: '+';
+}
+
+/* Screenings - Compact List */
 .screenings {
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
 }
 
 .screening {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 1.5rem;
-    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 1rem;
+    padding: 0.5rem 0;
     border-bottom: 1px solid var(--bg-alt);
+    text-decoration: none;
+    color: inherit;
+    align-items: baseline;
 }
 
 .screening:last-child {
@@ -177,94 +211,36 @@ main {
 
 .screening:hover {
     background: var(--bg-alt);
-    margin: 0 -1rem;
-    padding: 1rem;
-    border-radius: 4px;
-}
-
-.screening-main {
-    flex: 1;
+    margin: 0 -0.5rem;
+    padding: 0.5rem;
 }
 
 .film-title {
     font-family: var(--serif);
-    font-size: 1.125rem;
+    font-size: 0.9375rem;
     font-weight: 600;
-    margin-bottom: 0.25rem;
-}
-
-.film-meta {
-    display: flex;
-    gap: 0.75rem;
-    font-size: 0.8125rem;
-    color: var(--text-muted);
-}
-
-.film-meta span::after {
-    content: '·';
-    margin-left: 0.75rem;
-    color: var(--text-light);
-}
-
-.film-meta span:last-child::after {
-    display: none;
-}
-
-.format {
-    text-transform: uppercase;
-    font-size: 0.75rem;
-    letter-spacing: 0.05em;
-}
-
-/* Screening Details */
-.screening-details {
-    text-align: right;
-    flex-shrink: 0;
-}
-
-.theater {
-    display: block;
-    font-size: 0.8125rem;
     color: var(--text);
-    text-decoration: none;
-    margin-bottom: 0.25rem;
 }
 
-.theater:hover {
-    color: var(--accent);
-}
-
-.times {
-    display: flex;
-    gap: 0.5rem;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    margin-bottom: 0.5rem;
-}
-
-.time {
-    font-size: 0.875rem;
+.film-venue {
+    font-size: 0.8125rem;
     color: var(--text-muted);
-    font-weight: 500;
+    text-align: right;
+    white-space: nowrap;
 }
 
-.tickets-link {
+.film-times {
     font-size: 0.75rem;
-    color: var(--accent);
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-weight: 500;
-}
-
-.tickets-link:hover {
-    text-decoration: underline;
+    color: var(--text-light);
+    text-align: right;
+    white-space: nowrap;
+    min-width: 80px;
 }
 
 /* No Screenings */
 .no-screenings {
     text-align: center;
-    padding: 4rem 2rem;
+    padding: 3rem 2rem;
     color: var(--text-muted);
     font-style: italic;
 }
@@ -295,17 +271,17 @@ footer {
     position: relative;
     z-index: 1;
     border-top: 1px solid var(--border);
-    padding: 2rem 1.5rem;
-    max-width: 800px;
+    padding: 1.5rem;
+    max-width: 900px;
     margin: 0 auto;
-    background: rgba(255, 255, 255, 0.92);
+    background: rgba(255, 255, 255, 0.95);
 }
 
 .theaters-list h4 {
     font-family: var(--serif);
-    font-size: 0.875rem;
+    font-size: 0.8125rem;
     font-weight: 400;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
     color: var(--text-muted);
 }
 
@@ -313,11 +289,11 @@ footer {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem 1.5rem;
+    gap: 0.25rem 1rem;
 }
 
 .theaters-list a {
-    font-size: 0.8125rem;
+    font-size: 0.75rem;
     color: var(--text);
     text-decoration: none;
 }
@@ -327,9 +303,9 @@ footer {
 }
 
 .footer-note {
-    font-size: 0.6875rem;
+    font-size: 0.625rem;
     color: var(--text-light);
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     text-align: center;
 }
 
@@ -344,19 +320,16 @@ footer {
 /* Mobile */
 @media (max-width: 600px) {
     header h1 {
-        font-size: 1.875rem;
+        font-size: 1.5rem;
     }
 
     .screening {
-        flex-direction: column;
-        gap: 0.75rem;
+        grid-template-columns: 1fr;
+        gap: 0.25rem;
     }
 
-    .screening-details {
+    .film-venue,
+    .film-times {
         text-align: left;
-    }
-
-    .times {
-        justify-content: flex-start;
     }
 }
