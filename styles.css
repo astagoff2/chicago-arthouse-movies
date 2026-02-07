@@ -38,26 +38,30 @@ body::before {
     top: 0;
     left: 0;
     right: 0;
-    height: 300vh;
+    height: 100vh;
     z-index: 0;
     background-image:
-        url('https://static.life.com/wp-content/uploads/migrated/2014/06/140606-chicago-01-1024x801.jpg'),
-        url('https://static.life.com/wp-content/uploads/migrated/2014/06/140606-chicago-05-1024x819.jpg'),
-        url('https://static.life.com/wp-content/uploads/migrated/2014/06/140606-chicago-091.jpg');
-    background-size: cover, cover, cover;
-    background-position: center 0%, center 33%, center 66%;
+        url('https://static.life.com/wp-content/uploads/migrated/2014/06/140606-chicago-01-1024x801.jpg');
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.5;
+    opacity: 0.45;
     filter: grayscale(100%);
-    animation: slow-scroll 180s linear infinite;
+    animation: crossfade 24s ease-in-out infinite;
 }
 
-@keyframes slow-scroll {
-    0% {
-        transform: translateY(0);
+@keyframes crossfade {
+    0%, 30% {
+        background-image: url('https://static.life.com/wp-content/uploads/migrated/2014/06/140606-chicago-01-1024x801.jpg');
+    }
+    33%, 63% {
+        background-image: url('https://static.life.com/wp-content/uploads/migrated/2014/06/140606-chicago-05-1024x819.jpg');
+    }
+    66%, 96% {
+        background-image: url('https://static.life.com/wp-content/uploads/migrated/2014/06/140606-chicago-091.jpg');
     }
     100% {
-        transform: translateY(-66.66%);
+        background-image: url('https://static.life.com/wp-content/uploads/migrated/2014/06/140606-chicago-01-1024x801.jpg');
     }
 }
 
@@ -88,15 +92,17 @@ header .subtitle {
 }
 
 .header-nav {
-    margin-top: 1rem;
+    margin-top: 1.25rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
 }
 
 .header-nav a {
-    font-size: 0.8125rem;
-    color: var(--text-muted);
+    font-size: 0.875rem;
+    color: var(--text);
     text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05em;
+    font-weight: 500;
 }
 
 .header-nav a:hover {
