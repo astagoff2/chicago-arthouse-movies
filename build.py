@@ -17,7 +17,8 @@ from scrapers import (
     scrape_music_box,
     scrape_logan,
     scrape_facets,
-    scrape_siskel
+    scrape_siskel,
+    scrape_alamo
 )
 
 
@@ -56,6 +57,7 @@ def run_scrapers():
         ('Music Box', scrape_music_box),
         ('Logan Theatre', scrape_logan),
         ('Facets', scrape_facets),
+        ('Alamo Drafthouse', scrape_alamo),
     ]
 
     for name, scraper in scrapers:

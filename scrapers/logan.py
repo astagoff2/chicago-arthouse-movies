@@ -17,7 +17,11 @@ def scrape_logan():
     movies = []
     base_url = 'https://thelogantheatre.com'
 
-    resp = make_request(base_url)
+    # Use the showtimes page
+    resp = make_request(f'{base_url}/showtimes')
+    if not resp:
+        resp = make_request(base_url)
+
     if not resp:
         logger.error("Failed to fetch Logan Theatre")
         return movies
@@ -25,77 +29,63 @@ def scrape_logan():
     soup = BeautifulSoup(resp.text, 'lxml')
     today = datetime.now().strftime('%Y-%m-%d')
 
-    # Logan shows movies with titles and showtimes
-    # Look for movie title links - they typically link to movie detail pages
+    # Extract full page text and look for movie patterns
+    # Logan format: "Movie Title - Rating" followed by times
+    page_text = soup.get_text()
 
-    # Find all anchor tags that could be movie titles
-    # Movie titles are usually in links that aren't navigation
-    all_links = soup.find_all('a', href=True)
+    # Find movie title elements - they're typically in specific divs/spans
+    # Look for patterns like links with movie info
+    movie_sections = soup.find_all(['div', 'article', 'section'], class_=re.compile(r'movie|film|show', re.I))
 
     seen = set()
 
-    for link in all_links:
-        href = link.get('href', '')
-        title = clean_text(link.get_text())
+    # Also try parsing from the text directly
+    # Pattern: movie titles followed by ratings and times
+    lines = page_text.split('\n')
+    current_title = None
+    current_times = []
 
-        # Skip navigation, empty, or short titles
-        if not title or len(title) < 3:
+    for i, line in enumerate(lines):
+        line = line.strip()
+        if not line:
             continue
 
-        # Skip obvious navigation
-        nav_words = ['menu', 'home', 'movies', 'events', 'membership', 'food', 'drink',
-                     'info', 'contact', 'about', 'facebook', 'twitter', 'instagram',
-                     'privacy', 'terms', 'buy tickets', 'trailer', 'more info']
-        if title.lower() in nav_words or any(n in title.lower() for n in ['@', 'http', '.com']):
-            continue
+        # Check if this looks like a movie title (not a time, not navigation)
+        # Movie titles are typically Title Case and reasonable length
+        if (len(line) > 3 and len(line) < 60 and
+            not re.match(r'^\d', line) and
+            not line.lower() in ['movies', 'events', 'menu', 'home', 'contact', 'about']):
 
-        # Look for movie-like patterns (avoid times, prices)
-        if re.match(r'^\d{1,2}:\d{2}', title) or re.match(r'^\$', title):
-            continue
+            # Check if next lines have times
+            times_found = []
+            for j in range(1, 4):
+                if i + j < len(lines):
+                    next_line = lines[i + j].strip()
+                    time_matches = re.findall(r'(\d{1,2}:\d{2}\s*[ap])', next_line, re.I)
+                    times_found.extend(time_matches)
 
-        # Get parent to find associated times
-        parent = link.find_parent(['div', 'li', 'article', 'section'])
-        if not parent:
-            continue
+            if times_found and line not in seen:
+                # Skip navigation items
+                skip = ['movie trivia', 'membership', 'gift card', 'coming soon',
+                        'ticket pricing', 'now showing', 'food', 'drink', 'menu']
+                if any(s in line.lower() for s in skip):
+                    continue
 
-        parent_text = clean_text(parent.get_text())
+                seen.add(line)
+                times = [parse_time(t + 'm') for t in times_found[:6]]
 
-        # Find showtimes in parent - pattern like "1:00p" or "7:00 PM"
-        time_pattern = r'(\d{1,2}:\d{2}\s*[ap]\.?m?\.?)'
-        time_matches = re.findall(time_pattern, parent_text, re.I)
-
-        if not time_matches:
-            continue
-
-        times = []
-        for t in time_matches[:6]:  # Limit to 6 times
-            normalized = parse_time(t)
-            if normalized and normalized not in times:
-                times.append(normalized)
-
-        if not times:
-            continue
-
-        # Check if this looks like a real movie title (has reasonable length, not all caps nav)
-        if title in seen:
-            continue
-        if len(title) > 100:  # Too long, probably grabbed extra text
-            continue
-
-        seen.add(title)
-
-        movies.append({
-            'title': title,
-            'theater': THEATER_INFO['name'],
-            'theater_url': THEATER_INFO['url'],
-            'address': THEATER_INFO['address'],
-            'date': today,  # Logan shows today's schedule
-            'times': times,
-            'format': None,
-            'director': None,
-            'year': None,
-            'ticket_url': base_url
-        })
+                movies.append({
+                    'title': line,
+                    'theater': THEATER_INFO['name'],
+                    'theater_url': THEATER_INFO['url'],
+                    'address': THEATER_INFO['address'],
+                    'date': today,
+                    'times': times if times else ['See website'],
+                    'format': None,
+                    'director': None,
+                    'year': None,
+                    'ticket_url': f'{base_url}/showtimes'
+                })
 
     logger.info(f"Logan Theatre: Found {len(movies)} screenings")
     return movies

@@ -3,6 +3,7 @@ from .music_box import scrape_music_box
 from .logan import scrape_logan
 from .facets import scrape_facets
 from .siskel import scrape_siskel
+from .alamo import scrape_alamo
 from .utils import get_week_dates
 
 __all__ = [
@@ -11,5 +12,6 @@ __all__ = [
     'scrape_logan',
     'scrape_facets',
     'scrape_siskel',
+    'scrape_alamo',
     'get_week_dates'
 ]
