@@ -178,19 +178,11 @@ main {
     gap: 1rem;
     padding: 0.5rem 0;
     border-bottom: 1px solid var(--bg-alt);
-    text-decoration: none;
-    color: inherit;
     align-items: baseline;
 }
 
 .screening:last-child {
     border-bottom: none;
-}
-
-.screening:hover {
-    background: var(--bg-alt);
-    margin: 0 -0.5rem;
-    padding: 0.5rem;
 }
 
 .film-title {
@@ -215,6 +207,11 @@ main {
     color: var(--text-muted);
     text-align: right;
     white-space: nowrap;
+    text-decoration: none;
+}
+
+.film-venue:hover {
+    color: var(--accent);
 }
 
 .film-times {
@@ -223,6 +220,11 @@ main {
     text-align: right;
     white-space: nowrap;
     min-width: 80px;
+    text-decoration: none;
+}
+
+.film-times:hover {
+    color: var(--accent);
 }
 
 /* No Screenings */

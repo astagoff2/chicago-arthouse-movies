@@ -28,11 +28,11 @@
 
             <div class="screenings">
                 {% for movie in screenings %}
-                <a href="{{ movie.ticket_url }}" class="screening" target="_blank" rel="noopener">
+                <div class="screening">
                     <span class="film-title">{{ movie.title }}{% if movie.format %} <span class="format">{{ movie.format }}</span>{% endif %}</span>
-                    <span class="film-venue">{{ movie.theater }}</span>
-                    <span class="film-times">{{ movie.times | join(', ') }}</span>
-                </a>
+                    <a href="{{ movie.theater_url }}" class="film-venue" target="_blank" rel="noopener">{{ movie.theater }}</a>
+                    <a href="{{ movie.ticket_url }}" class="film-times" target="_blank" rel="noopener">{{ movie.times | join(', ') }}</a>
+                </div>
                 {% endfor %}
             </div>
         </section>
