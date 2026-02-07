@@ -1,9 +1,7 @@
-"""Scraper for Gene Siskel Film Center."""
-from bs4 import BeautifulSoup
-from .utils import make_request, parse_date, parse_time, clean_text, logger
+"""Scraper for Gene Siskel Film Center using Playwright."""
+from .utils import clean_text, logger
 import re
 from datetime import datetime
-
 
 THEATER_INFO = {
     'name': 'Gene Siskel Film Center',
@@ -13,43 +11,61 @@ THEATER_INFO = {
 
 
 def scrape_siskel():
-    """Scrape Gene Siskel Film Center schedule."""
+    """Scrape Gene Siskel Film Center schedule using Playwright."""
     movies = []
-    base_url = 'https://www.siskelfilmcenter.org'
 
-    resp = make_request(base_url)
-    if not resp:
-        logger.error("Failed to fetch Gene Siskel Film Center")
+    try:
+        from playwright.sync_api import sync_playwright
+    except ImportError:
+        logger.warning("Playwright not installed - skipping Siskel")
         return movies
 
-    soup = BeautifulSoup(resp.text, 'lxml')
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True)
+            page = browser.new_page()
+
+            # Go to the main page
+            page.goto(THEATER_INFO['url'], timeout=30000)
+
+            # Wait for content to load
+            page.wait_for_timeout(3000)
+
+            # Get the page content
+            content = page.content()
+            browser.close()
+
+    except Exception as e:
+        logger.error(f"Playwright error for Siskel: {e}")
+        return movies
+
+    # Parse the rendered HTML
+    from bs4 import BeautifulSoup
+    soup = BeautifulSoup(content, 'lxml')
+
     current_year = datetime.now().year
     today = datetime.now().strftime('%Y-%m-%d')
 
-    # Siskel shows films in a carousel/grid format
-    # Look for film titles which are typically in headings or strong links
-
-    # Find film cards/entries - look for elements with film info
-    # Films have titles like "A Poet (2025)" or just "A Poet"
-
     seen = set()
 
-    # Try to find film entries by looking for title patterns
-    # Search for text that looks like "Title (Year)" or linked titles
-    all_text = soup.get_text()
+    # Look for film titles in the rendered content
+    # Siskel displays films with title (director, year) format
+    page_text = soup.get_text()
 
-    # Pattern for "Title (Director, Year)" or "Title (Year)"
-    title_year_pattern = r'([A-Z][A-Za-z\s\':,\-\.]+?)\s*\((?:[^)]*,\s*)?(\d{4})\)'
-    matches = re.findall(title_year_pattern, all_text)
+    # Pattern: "Title (Director, Year)" or "Title (Year)"
+    pattern = r'([A-Z][A-Za-z\s\'\:\,\-\.\&]+?)\s*\(([^)]*\d{4})\)'
+    matches = re.findall(pattern, page_text)
 
-    for title, year in matches:
+    for title, info in matches:
         title = clean_text(title)
 
         # Skip navigation/generic items
         if not title or len(title) < 3 or len(title) > 80:
             continue
+
         skip = ['gene siskel', 'film center', 'school of', 'art institute',
-                'chicago', 'illinois', 'member', 'ticket', 'today', 'this week']
+                'chicago', 'illinois', 'member', 'ticket', 'state street',
+                'box office', 'visit', 'support', 'about']
         if any(s in title.lower() for s in skip):
             continue
 
@@ -57,29 +73,16 @@ def scrape_siskel():
             continue
         seen.add(title)
 
-        movies.append({
-            'title': title,
-            'theater': THEATER_INFO['name'],
-            'theater_url': THEATER_INFO['url'],
-            'address': THEATER_INFO['address'],
-            'date': today,
-            'times': ['See website'],
-            'format': None,
-            'director': None,
-            'year': int(year),
-            'ticket_url': f"{base_url}/showtimes"
-        })
+        # Extract year from info
+        year_match = re.search(r'(\d{4})', info)
+        year = int(year_match.group(1)) if year_match else None
 
-    # Also look for linked titles that might not have years
-    title_links = soup.find_all('a', href=re.compile(r'/films/|/events/|/shows/'))
-    for link in title_links:
-        title = clean_text(link.get_text())
-        if not title or len(title) < 3 or title in seen:
-            continue
-        skip = ['showtimes', 'calendar', 'events', 'films', 'more', 'view']
-        if title.lower() in skip:
-            continue
-        seen.add(title)
+        # Extract director if present
+        director = None
+        if ',' in info:
+            parts = info.split(',')
+            if len(parts) >= 2:
+                director = clean_text(parts[0])
 
         movies.append({
             'title': title,
@@ -89,9 +92,9 @@ def scrape_siskel():
             'date': today,
             'times': ['See website'],
             'format': None,
-            'director': None,
-            'year': None,
-            'ticket_url': base_url + link.get('href', '/showtimes')
+            'director': director,
+            'year': year,
+            'ticket_url': f"{THEATER_INFO['url']}/showtimes"
         })
 
     logger.info(f"Gene Siskel: Found {len(movies)} screenings")

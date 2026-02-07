@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-07T15:38:24.202460",
+  "last_updated": "2026-02-07T15:44:12.196618",
   "week_of": "2026-02-07",
   "movies": [
     {
@@ -239,55 +239,118 @@
       "ticket_url": "https://58699.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=52653&PLACEID=9"
     },
     {
-      "title": "Critic\u2019s Cut 2025",
-      "theater": "Facets",
-      "theater_url": "https://www.facets.org",
-      "address": "1517 W Fullerton Ave",
-      "date": "2026-02-07",
-      "times": [
-        "See website"
-      ],
-      "format": null,
-      "director": null,
-      "year": null,
-      "ticket_url": "https://facets.org/programs/critics-cut-2025-the-facets-50-wrap-party/"
-    },
-    {
-      "title": "The Moment",
+      "title": "28 Years Later: The Bone Temple",
       "theater": "Alamo Drafthouse",
       "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
       "address": "3519 N Clark St",
       "date": "2026-02-07",
       "times": [
-        "See website"
+        "6:30 PM",
+        "9:45 PM"
       ],
       "format": null,
       "director": null,
       "year": null,
-      "ticket_url": "https://drafthouse.com/chicago/show/the-moment"
+      "ticket_url": "https://drafthouse.com/chicago/show/28-years-later-the-bone-temple"
     },
     {
-      "title": "Nirvanna The Band The Show The Movie",
+      "title": "28 Years Later: The Bone Temple",
       "theater": "Alamo Drafthouse",
       "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
       "address": "3519 N Clark St",
-      "date": "2026-02-07",
+      "date": "2026-02-08",
       "times": [
-        "See website"
+        "7:45 PM"
       ],
       "format": null,
       "director": null,
       "year": null,
-      "ticket_url": "https://drafthouse.com/chicago/show/nirvanna-the-band-the-show-the-movie"
+      "ticket_url": "https://drafthouse.com/chicago/show/28-years-later-the-bone-temple"
+    },
+    {
+      "title": "28 Years Later: The Bone Temple",
+      "theater": "Alamo Drafthouse",
+      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
+      "address": "3519 N Clark St",
+      "date": "2026-02-09",
+      "times": [
+        "10:00 PM",
+        "6:45 PM"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://drafthouse.com/chicago/show/28-years-later-the-bone-temple"
+    },
+    {
+      "title": "28 Years Later: The Bone Temple",
+      "theater": "Alamo Drafthouse",
+      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
+      "address": "3519 N Clark St",
+      "date": "2026-02-10",
+      "times": [
+        "10:15 PM",
+        "7:15 PM"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://drafthouse.com/chicago/show/28-years-later-the-bone-temple"
+    },
+    {
+      "title": "28 Years Later: The Bone Temple",
+      "theater": "Alamo Drafthouse",
+      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
+      "address": "3519 N Clark St",
+      "date": "2026-02-11",
+      "times": [
+        "10:30 PM",
+        "7:30 PM"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://drafthouse.com/chicago/show/28-years-later-the-bone-temple"
+    },
+    {
+      "title": "The Phantom of the Opera (2004)",
+      "theater": "Alamo Drafthouse",
+      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
+      "address": "3519 N Clark St",
+      "date": "2026-02-08",
+      "times": [
+        "12:00 PM"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://drafthouse.com/chicago/show/the-phantom-of-the-opera-2004"
+    },
+    {
+      "title": "The Phantom of the Opera (2004)",
+      "theater": "Alamo Drafthouse",
+      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
+      "address": "3519 N Clark St",
+      "date": "2026-02-10",
+      "times": [
+        "12:15 PM"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://drafthouse.com/chicago/show/the-phantom-of-the-opera-2004"
     },
     {
       "title": "Wuthering Heights (2026)",
       "theater": "Alamo Drafthouse",
       "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
       "address": "3519 N Clark St",
-      "date": "2026-02-07",
+      "date": "2026-02-12",
       "times": [
-        "See website"
+        "10:00 PM",
+        "3:00 PM",
+        "6:30 PM",
+        "7:00 PM"
       ],
       "format": null,
       "director": null,
@@ -295,32 +358,44 @@
       "ticket_url": "https://drafthouse.com/chicago/show/wuthering-heights-2026"
     },
     {
-      "title": "Iron Lung",
+      "title": "Wuthering Heights (2026)",
       "theater": "Alamo Drafthouse",
       "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
       "address": "3519 N Clark St",
-      "date": "2026-02-07",
+      "date": "2026-02-13",
       "times": [
-        "See website"
+        "10:00 PM",
+        "12:00 PM",
+        "3:30 PM",
+        "6:00 PM",
+        "6:15 PM",
+        "9:30 PM"
       ],
       "format": null,
       "director": null,
       "year": null,
-      "ticket_url": "https://drafthouse.com/chicago/show/iron-lung"
+      "ticket_url": "https://drafthouse.com/chicago/show/wuthering-heights-2026"
     },
     {
-      "title": "Marty Supreme",
+      "title": "Wuthering Heights (2026)",
       "theater": "Alamo Drafthouse",
       "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
       "address": "3519 N Clark St",
-      "date": "2026-02-07",
+      "date": "2026-02-14",
       "times": [
-        "See website"
+        "10:15 PM",
+        "11:00 AM",
+        "11:45 AM",
+        "2:30 PM",
+        "3:15 PM",
+        "6:00 PM",
+        "6:45 PM",
+        "9:30 PM"
       ],
       "format": null,
       "director": null,
       "year": null,
-      "ticket_url": "https://drafthouse.com/chicago/show/marty-supreme"
+      "ticket_url": "https://drafthouse.com/chicago/show/wuthering-heights-2026"
     },
     {
       "title": "Arco",
@@ -329,7 +404,7 @@
       "address": "3519 N Clark St",
       "date": "2026-02-07",
       "times": [
-        "See website"
+        "3:30 PM"
       ],
       "format": null,
       "director": null,
@@ -337,18 +412,407 @@
       "ticket_url": "https://drafthouse.com/chicago/show/arco"
     },
     {
-      "title": "28 Years Later: The Bone Temple",
+      "title": "Arco",
+      "theater": "Alamo Drafthouse",
+      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
+      "address": "3519 N Clark St",
+      "date": "2026-02-08",
+      "times": [
+        "11:00 AM",
+        "2:00 PM"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://drafthouse.com/chicago/show/arco"
+    },
+    {
+      "title": "Arco",
+      "theater": "Alamo Drafthouse",
+      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
+      "address": "3519 N Clark St",
+      "date": "2026-02-09",
+      "times": [
+        "3:30 PM"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://drafthouse.com/chicago/show/arco"
+    },
+    {
+      "title": "Arco",
+      "theater": "Alamo Drafthouse",
+      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
+      "address": "3519 N Clark St",
+      "date": "2026-02-10",
+      "times": [
+        "11:00 AM",
+        "3:30 PM"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://drafthouse.com/chicago/show/arco"
+    },
+    {
+      "title": "Arco",
+      "theater": "Alamo Drafthouse",
+      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
+      "address": "3519 N Clark St",
+      "date": "2026-02-11",
+      "times": [
+        "3:45 PM"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://drafthouse.com/chicago/show/arco"
+    },
+    {
+      "title": "Brief Encounter (1945)",
+      "theater": "Alamo Drafthouse",
+      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
+      "address": "3519 N Clark St",
+      "date": "2026-02-08",
+      "times": [
+        "3:30 PM"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://drafthouse.com/chicago/show/brief-encounter"
+    },
+    {
+      "title": "The Mist",
+      "theater": "Alamo Drafthouse",
+      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
+      "address": "3519 N Clark St",
+      "date": "2026-02-13",
+      "times": [
+        "7:00 PM"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://drafthouse.com/chicago/show/the-mist"
+    },
+    {
+      "title": "The Ring (2002)",
+      "theater": "Alamo Drafthouse",
+      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
+      "address": "3519 N Clark St",
+      "date": "2026-02-13",
+      "times": [
+        "9:45 PM"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://drafthouse.com/chicago/show/the-ring"
+    },
+    {
+      "title": "Twin Peaks",
+      "theater": "Alamo Drafthouse",
+      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
+      "address": "3519 N Clark St",
+      "date": "2026-02-09",
+      "times": [
+        "4:00 PM"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://drafthouse.com/chicago/show/twin-peaks"
+    },
+    {
+      "title": "Repo Man",
+      "theater": "Alamo Drafthouse",
+      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
+      "address": "3519 N Clark St",
+      "date": "2026-02-09",
+      "times": [
+        "6:30 PM"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://drafthouse.com/chicago/show/repo-man"
+    },
+    {
+      "title": "Repo Man",
+      "theater": "Alamo Drafthouse",
+      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
+      "address": "3519 N Clark St",
+      "date": "2026-02-10",
+      "times": [
+        "3:45 PM"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://drafthouse.com/chicago/show/repo-man"
+    },
+    {
+      "title": "Iron Lung",
       "theater": "Alamo Drafthouse",
       "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
       "address": "3519 N Clark St",
       "date": "2026-02-07",
       "times": [
-        "See website"
+        "10:00 PM",
+        "6:45 PM"
       ],
       "format": null,
       "director": null,
       "year": null,
-      "ticket_url": "https://drafthouse.com/chicago/show/28-years-later-the-bone-temple"
+      "ticket_url": "https://drafthouse.com/chicago/show/iron-lung"
+    },
+    {
+      "title": "Iron Lung",
+      "theater": "Alamo Drafthouse",
+      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
+      "address": "3519 N Clark St",
+      "date": "2026-02-08",
+      "times": [
+        "6:45 PM"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://drafthouse.com/chicago/show/iron-lung"
+    },
+    {
+      "title": "Iron Lung",
+      "theater": "Alamo Drafthouse",
+      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
+      "address": "3519 N Clark St",
+      "date": "2026-02-09",
+      "times": [
+        "6:15 PM",
+        "9:45 PM"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://drafthouse.com/chicago/show/iron-lung"
+    },
+    {
+      "title": "Iron Lung",
+      "theater": "Alamo Drafthouse",
+      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
+      "address": "3519 N Clark St",
+      "date": "2026-02-10",
+      "times": [
+        "6:15 PM",
+        "9:45 PM"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://drafthouse.com/chicago/show/iron-lung"
+    },
+    {
+      "title": "Iron Lung",
+      "theater": "Alamo Drafthouse",
+      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
+      "address": "3519 N Clark St",
+      "date": "2026-02-11",
+      "times": [
+        "10:15 PM",
+        "6:15 PM"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://drafthouse.com/chicago/show/iron-lung"
+    },
+    {
+      "title": "Nirvanna The Band The Show The Movie",
+      "theater": "Alamo Drafthouse",
+      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
+      "address": "3519 N Clark St",
+      "date": "2026-02-11",
+      "times": [
+        "7:00 PM"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://drafthouse.com/chicago/show/nirvanna-the-band-the-show-the-movie"
+    },
+    {
+      "title": "Nirvanna The Band The Show The Movie",
+      "theater": "Alamo Drafthouse",
+      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
+      "address": "3519 N Clark St",
+      "date": "2026-02-12",
+      "times": [
+        "10:15 PM",
+        "7:30 PM"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://drafthouse.com/chicago/show/nirvanna-the-band-the-show-the-movie"
+    },
+    {
+      "title": "Nirvanna The Band The Show The Movie",
+      "theater": "Alamo Drafthouse",
+      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
+      "address": "3519 N Clark St",
+      "date": "2026-02-13",
+      "times": [
+        "10:30 PM",
+        "11:30 AM",
+        "2:15 PM",
+        "5:00 PM",
+        "7:45 PM"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://drafthouse.com/chicago/show/nirvanna-the-band-the-show-the-movie"
+    },
+    {
+      "title": "Nirvanna The Band The Show The Movie",
+      "theater": "Alamo Drafthouse",
+      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
+      "address": "3519 N Clark St",
+      "date": "2026-02-14",
+      "times": [
+        "10:30 PM",
+        "11:30 AM",
+        "2:15 PM",
+        "5:00 PM",
+        "7:45 PM"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://drafthouse.com/chicago/show/nirvanna-the-band-the-show-the-movie"
+    },
+    {
+      "title": "Marty Supreme",
+      "theater": "Alamo Drafthouse",
+      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
+      "address": "3519 N Clark St",
+      "date": "2026-02-07",
+      "times": [
+        "6:00 PM",
+        "9:30 PM"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://drafthouse.com/chicago/show/marty-supreme"
+    },
+    {
+      "title": "Marty Supreme",
+      "theater": "Alamo Drafthouse",
+      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
+      "address": "3519 N Clark St",
+      "date": "2026-02-08",
+      "times": [
+        "11:20 AM",
+        "3:00 PM",
+        "6:00 PM"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://drafthouse.com/chicago/show/marty-supreme"
+    },
+    {
+      "title": "Marty Supreme",
+      "theater": "Alamo Drafthouse",
+      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
+      "address": "3519 N Clark St",
+      "date": "2026-02-09",
+      "times": [
+        "2:45 PM",
+        "6:00 PM",
+        "9:15 PM"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://drafthouse.com/chicago/show/marty-supreme"
+    },
+    {
+      "title": "Marty Supreme",
+      "theater": "Alamo Drafthouse",
+      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
+      "address": "3519 N Clark St",
+      "date": "2026-02-10",
+      "times": [
+        "11:30 AM",
+        "2:30 PM",
+        "6:00 PM",
+        "9:30 PM"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://drafthouse.com/chicago/show/marty-supreme"
+    },
+    {
+      "title": "Marty Supreme",
+      "theater": "Alamo Drafthouse",
+      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
+      "address": "3519 N Clark St",
+      "date": "2026-02-11",
+      "times": [
+        "2:45 PM",
+        "6:00 PM",
+        "9:45 PM"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://drafthouse.com/chicago/show/marty-supreme"
+    },
+    {
+      "title": "My Best Friend's Wedding",
+      "theater": "Alamo Drafthouse",
+      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
+      "address": "3519 N Clark St",
+      "date": "2026-02-11",
+      "times": [
+        "6:30 PM"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://drafthouse.com/chicago/show/my-best-friends-wedding"
+    },
+    {
+      "title": "My Best Friend's Wedding",
+      "theater": "Alamo Drafthouse",
+      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
+      "address": "3519 N Clark St",
+      "date": "2026-02-10",
+      "times": [
+        "1:30 PM"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://drafthouse.com/chicago/show/my-best-friends-wedding"
+    },
+    {
+      "title": "Mystery Machine (2/9/2026)",
+      "theater": "Alamo Drafthouse",
+      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
+      "address": "3519 N Clark St",
+      "date": "2026-02-09",
+      "times": [
+        "7:30 PM"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://drafthouse.com/chicago/show/mystery-machine-2-9-2026"
     },
     {
       "title": "No Other Choice",
@@ -357,7 +821,7 @@
       "address": "3519 N Clark St",
       "date": "2026-02-07",
       "times": [
-        "See website"
+        "3:15 PM"
       ],
       "format": null,
       "director": null,
@@ -365,18 +829,62 @@
       "ticket_url": "https://drafthouse.com/chicago/show/no-other-choice"
     },
     {
-      "title": "Repo Man",
+      "title": "No Other Choice",
       "theater": "Alamo Drafthouse",
       "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
       "address": "3519 N Clark St",
-      "date": "2026-02-07",
+      "date": "2026-02-08",
       "times": [
-        "See website"
+        "1:30 PM",
+        "4:30 PM"
       ],
       "format": null,
       "director": null,
       "year": null,
-      "ticket_url": "https://drafthouse.com/chicago/show/guest-selects-repo-man"
+      "ticket_url": "https://drafthouse.com/chicago/show/no-other-choice"
+    },
+    {
+      "title": "No Other Choice",
+      "theater": "Alamo Drafthouse",
+      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
+      "address": "3519 N Clark St",
+      "date": "2026-02-09",
+      "times": [
+        "3:15 PM"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://drafthouse.com/chicago/show/no-other-choice"
+    },
+    {
+      "title": "No Other Choice",
+      "theater": "Alamo Drafthouse",
+      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
+      "address": "3519 N Clark St",
+      "date": "2026-02-10",
+      "times": [
+        "12:00 PM",
+        "3:15 PM"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://drafthouse.com/chicago/show/no-other-choice"
+    },
+    {
+      "title": "No Other Choice",
+      "theater": "Alamo Drafthouse",
+      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
+      "address": "3519 N Clark St",
+      "date": "2026-02-11",
+      "times": [
+        "3:30 PM"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://drafthouse.com/chicago/show/no-other-choice"
     },
     {
       "title": "OBEX",
@@ -385,7 +893,7 @@
       "address": "3519 N Clark St",
       "date": "2026-02-07",
       "times": [
-        "See website"
+        "10:30 PM"
       ],
       "format": null,
       "director": null,
@@ -393,503 +901,155 @@
       "ticket_url": "https://drafthouse.com/chicago/show/obex"
     },
     {
-      "title": "A Better Tomorrow - Hong Kong Cinema Classics",
+      "title": "OBEX",
       "theater": "Alamo Drafthouse",
       "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
       "address": "3519 N Clark St",
-      "date": "2026-02-07",
+      "date": "2026-02-09",
       "times": [
-        "See website"
+        "10:15 PM"
       ],
       "format": null,
       "director": null,
       "year": null,
-      "ticket_url": "https://drafthouse.com/chicago/show/a-better-tomorrow-hong-kong-cinema-classics"
-    },
-    {
-      "title": "The Phantom of the Opera (2004)",
-      "theater": "Alamo Drafthouse",
-      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
-      "address": "3519 N Clark St",
-      "date": "2026-02-07",
-      "times": [
-        "See website"
-      ],
-      "format": null,
-      "director": null,
-      "year": null,
-      "ticket_url": "https://drafthouse.com/chicago/show/alamo-crafthouse-the-phantom-of-the-opera-2004"
-    },
-    {
-      "title": "AURORA: What Happened to the Earth?",
-      "theater": "Alamo Drafthouse",
-      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
-      "address": "3519 N Clark St",
-      "date": "2026-02-07",
-      "times": [
-        "See website"
-      ],
-      "format": null,
-      "director": null,
-      "year": null,
-      "ticket_url": "https://drafthouse.com/chicago/show/aurora-what-happened-to-the-earth"
-    },
-    {
-      "title": "Brief Encounter (1945)",
-      "theater": "Alamo Drafthouse",
-      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
-      "address": "3519 N Clark St",
-      "date": "2026-02-07",
-      "times": [
-        "See website"
-      ],
-      "format": null,
-      "director": null,
-      "year": null,
-      "ticket_url": "https://drafthouse.com/chicago/show/brief-encounter"
-    },
-    {
-      "title": "Chase Atlantic: Lost in Heaven",
-      "theater": "Alamo Drafthouse",
-      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
-      "address": "3519 N Clark St",
-      "date": "2026-02-07",
-      "times": [
-        "See website"
-      ],
-      "format": null,
-      "director": null,
-      "year": null,
-      "ticket_url": "https://drafthouse.com/chicago/show/chase-atlantic-lost-in-heaven"
-    },
-    {
-      "title": "Longlegs",
-      "theater": "Alamo Drafthouse",
-      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
-      "address": "3519 N Clark St",
-      "date": "2026-02-07",
-      "times": [
-        "See website"
-      ],
-      "format": null,
-      "director": null,
-      "year": null,
-      "ticket_url": "https://drafthouse.com/chicago/show/free-victory-screening-longlegs"
-    },
-    {
-      "title": "The Cabin in the Woods",
-      "theater": "Alamo Drafthouse",
-      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
-      "address": "3519 N Clark St",
-      "date": "2026-02-07",
-      "times": [
-        "See website"
-      ],
-      "format": null,
-      "director": null,
-      "year": null,
-      "ticket_url": "https://drafthouse.com/chicago/show/free-victory-screening-the-cabin-in-the-woods"
-    },
-    {
-      "title": "The Mist",
-      "theater": "Alamo Drafthouse",
-      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
-      "address": "3519 N Clark St",
-      "date": "2026-02-07",
-      "times": [
-        "See website"
-      ],
-      "format": null,
-      "director": null,
-      "year": null,
-      "ticket_url": "https://drafthouse.com/chicago/show/free-victory-screening-the-mist"
-    },
-    {
-      "title": "The Ring (2002)",
-      "theater": "Alamo Drafthouse",
-      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
-      "address": "3519 N Clark St",
-      "date": "2026-02-07",
-      "times": [
-        "See website"
-      ],
-      "format": null,
-      "director": null,
-      "year": null,
-      "ticket_url": "https://drafthouse.com/chicago/show/free-victory-screening-the-ring-2002"
-    },
-    {
-      "title": "Twin Peaks",
-      "theater": "Alamo Drafthouse",
-      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
-      "address": "3519 N Clark St",
-      "date": "2026-02-07",
-      "times": [
-        "See website"
-      ],
-      "format": null,
-      "director": null,
-      "year": null,
-      "ticket_url": "https://drafthouse.com/chicago/show/greetings-from-twin-peaks-twin-peaks-episodes-28-30"
-    },
-    {
-      "title": "Idiotka",
-      "theater": "Alamo Drafthouse",
-      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
-      "address": "3519 N Clark St",
-      "date": "2026-02-07",
-      "times": [
-        "See website"
-      ],
-      "format": null,
-      "director": null,
-      "year": null,
-      "ticket_url": "https://drafthouse.com/chicago/show/idiotka"
-    },
-    {
-      "title": "The Whitest Kids U' Know's Mars",
-      "theater": "Alamo Drafthouse",
-      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
-      "address": "3519 N Clark St",
-      "date": "2026-02-07",
-      "times": [
-        "See website"
-      ],
-      "format": null,
-      "director": null,
-      "year": null,
-      "ticket_url": "https://drafthouse.com/chicago/show/live-q-a-the-whitest-kids-u-knows-mars"
-    },
-    {
-      "title": "13 Going on 30",
-      "theater": "Alamo Drafthouse",
-      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
-      "address": "3519 N Clark St",
-      "date": "2026-02-07",
-      "times": [
-        "See website"
-      ],
-      "format": null,
-      "director": null,
-      "year": null,
-      "ticket_url": "https://drafthouse.com/chicago/show/movie-party-13-going-on-30"
-    },
-    {
-      "title": "My Best Friend's Wedding",
-      "theater": "Alamo Drafthouse",
-      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
-      "address": "3519 N Clark St",
-      "date": "2026-02-07",
-      "times": [
-        "See website"
-      ],
-      "format": null,
-      "director": null,
-      "year": null,
-      "ticket_url": "https://drafthouse.com/chicago/show/movie-party-my-best-friends-wedding"
-    },
-    {
-      "title": "The Substance",
-      "theater": "Alamo Drafthouse",
-      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
-      "address": "3519 N Clark St",
-      "date": "2026-02-07",
-      "times": [
-        "See website"
-      ],
-      "format": null,
-      "director": null,
-      "year": null,
-      "ticket_url": "https://drafthouse.com/chicago/show/movie-party-the-substance"
-    },
-    {
-      "title": "Mystery Machine 2/16/2026",
-      "theater": "Alamo Drafthouse",
-      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
-      "address": "3519 N Clark St",
-      "date": "2026-02-07",
-      "times": [
-        "See website"
-      ],
-      "format": null,
-      "director": null,
-      "year": null,
-      "ticket_url": "https://drafthouse.com/chicago/show/mystery-machine-2-16-2026"
-    },
-    {
-      "title": "Mystery Machine (2/9/2026)",
-      "theater": "Alamo Drafthouse",
-      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
-      "address": "3519 N Clark St",
-      "date": "2026-02-07",
-      "times": [
-        "See website"
-      ],
-      "format": null,
-      "director": null,
-      "year": null,
-      "ticket_url": "https://drafthouse.com/chicago/show/mystery-machine-2-9-2026"
-    },
-    {
-      "title": "I Live Here Now",
-      "theater": "Alamo Drafthouse",
-      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
-      "address": "3519 N Clark St",
-      "date": "2026-02-07",
-      "times": [
-        "See website"
-      ],
-      "format": null,
-      "director": null,
-      "year": null,
-      "ticket_url": "https://drafthouse.com/chicago/show/special-event-i-live-here-now-twin-peaks-day-sneak-preview"
+      "ticket_url": "https://drafthouse.com/chicago/show/obex"
     },
     {
       "title": "Jess Franco's Daughter of Dracula",
       "theater": "Alamo Drafthouse",
       "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
       "address": "3519 N Clark St",
-      "date": "2026-02-07",
+      "date": "2026-02-10",
       "times": [
-        "See website"
+        "6:45 PM"
       ],
       "format": null,
       "director": null,
       "year": null,
-      "ticket_url": "https://drafthouse.com/chicago/show/terror-tuesday-jess-francos-daughter-of-dracula"
-    },
-    {
-      "title": "Nadja",
-      "theater": "Alamo Drafthouse",
-      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
-      "address": "3519 N Clark St",
-      "date": "2026-02-07",
-      "times": [
-        "See website"
-      ],
-      "format": null,
-      "director": null,
-      "year": null,
-      "ticket_url": "https://drafthouse.com/chicago/show/terror-tuesday-nadja"
-    },
-    {
-      "title": "The Other Side of the Mirror",
-      "theater": "Alamo Drafthouse",
-      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
-      "address": "3519 N Clark St",
-      "date": "2026-02-07",
-      "times": [
-        "See website"
-      ],
-      "format": null,
-      "director": null,
-      "year": null,
-      "ticket_url": "https://drafthouse.com/chicago/show/terror-tuesday-the-other-side-of-the-mirror"
-    },
-    {
-      "title": "Anything That Moves",
-      "theater": "Alamo Drafthouse",
-      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
-      "address": "3519 N Clark St",
-      "date": "2026-02-07",
-      "times": [
-        "See website"
-      ],
-      "format": null,
-      "director": null,
-      "year": null,
-      "ticket_url": "https://drafthouse.com/chicago/show/weird-wednesday-anything-that-moves"
-    },
-    {
-      "title": "Girlhood",
-      "theater": "Alamo Drafthouse",
-      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
-      "address": "3519 N Clark St",
-      "date": "2026-02-07",
-      "times": [
-        "See website"
-      ],
-      "format": null,
-      "director": null,
-      "year": null,
-      "ticket_url": "https://drafthouse.com/chicago/show/girlhood"
-    },
-    {
-      "title": "Millennium Mambo",
-      "theater": "Alamo Drafthouse",
-      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
-      "address": "3519 N Clark St",
-      "date": "2026-02-07",
-      "times": [
-        "See website"
-      ],
-      "format": null,
-      "director": null,
-      "year": null,
-      "ticket_url": "https://drafthouse.com/chicago/show/millennium-mambo"
-    },
-    {
-      "title": "Harold and Maude",
-      "theater": "Alamo Drafthouse",
-      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
-      "address": "3519 N Clark St",
-      "date": "2026-02-07",
-      "times": [
-        "See website"
-      ],
-      "format": null,
-      "director": null,
-      "year": null,
-      "ticket_url": "https://drafthouse.com/chicago/show/queer-film-theory-101-harold-and-maude"
+      "ticket_url": "https://drafthouse.com/chicago/show/jess-francos-daughter-of-dracula"
     },
     {
       "title": "Tales From The Crypt: Demon Knight",
       "theater": "Alamo Drafthouse",
       "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
       "address": "3519 N Clark St",
-      "date": "2026-02-07",
+      "date": "2026-02-10",
       "times": [
-        "See website"
+        "9:30 PM"
       ],
       "format": null,
       "director": null,
       "year": null,
-      "ticket_url": "https://drafthouse.com/chicago/show/terror-tuesday-tales-from-the-crypt-demon-knight"
+      "ticket_url": "https://drafthouse.com/chicago/show/tales-from-the-crypt-demon-knight"
     },
     {
-      "title": "Dance Freak",
+      "title": "The Moment",
       "theater": "Alamo Drafthouse",
       "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
       "address": "3519 N Clark St",
       "date": "2026-02-07",
       "times": [
-        "See website"
+        "10:00 PM",
+        "3:30 PM",
+        "4:00 PM",
+        "5:00 PM",
+        "6:15 PM",
+        "7:00 PM",
+        "7:45 PM",
+        "9:15 PM"
       ],
       "format": null,
       "director": null,
       "year": null,
-      "ticket_url": "https://drafthouse.com/chicago/show/weird-wednesday-dance-freak"
+      "ticket_url": "https://drafthouse.com/chicago/show/the-moment"
     },
     {
-      "title": "Crunchyroll Anime Nights Sneak Peek (3/16/2026)",
+      "title": "The Moment",
       "theater": "Alamo Drafthouse",
       "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
       "address": "3519 N Clark St",
-      "date": "2026-02-07",
+      "date": "2026-02-08",
       "times": [
-        "See website"
+        "11:15 AM",
+        "12:30 PM",
+        "1:00 PM",
+        "3:15 PM",
+        "4:00 PM",
+        "5:00 PM",
+        "6:15 PM",
+        "7:00 PM",
+        "8:00 PM"
       ],
       "format": null,
       "director": null,
       "year": null,
-      "ticket_url": "https://drafthouse.com/chicago/show/crunchyroll-anime-nights-sneak-peek-3-16-2026"
+      "ticket_url": "https://drafthouse.com/chicago/show/the-moment"
     },
     {
-      "title": "Fruits Basket -prelude- (Dubbed)",
+      "title": "The Moment",
       "theater": "Alamo Drafthouse",
       "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
       "address": "3519 N Clark St",
-      "date": "2026-02-07",
+      "date": "2026-02-09",
       "times": [
-        "See website"
+        "10:00 PM",
+        "3:00 PM",
+        "4:00 PM",
+        "7:00 PM",
+        "9:30 PM"
       ],
       "format": null,
       "director": null,
       "year": null,
-      "ticket_url": "https://drafthouse.com/chicago/show/fruits-basket-prelude-dubbed"
+      "ticket_url": "https://drafthouse.com/chicago/show/the-moment"
     },
     {
-      "title": "Twin Peaks: The Return",
+      "title": "The Moment",
       "theater": "Alamo Drafthouse",
       "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
       "address": "3519 N Clark St",
-      "date": "2026-02-07",
+      "date": "2026-02-10",
       "times": [
-        "See website"
+        "10:00 PM",
+        "11:45 AM",
+        "1:00 PM",
+        "4:00 PM",
+        "4:30 PM",
+        "6:30 PM",
+        "7:00 PM",
+        "9:15 PM"
       ],
       "format": null,
       "director": null,
       "year": null,
-      "ticket_url": "https://drafthouse.com/chicago/show/greetings-from-twin-peaks-twin-peaks-the-return-parts-1-3"
+      "ticket_url": "https://drafthouse.com/chicago/show/the-moment"
     },
     {
-      "title": "If Beale Street Could Talk",
+      "title": "The Moment",
       "theater": "Alamo Drafthouse",
       "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
       "address": "3519 N Clark St",
-      "date": "2026-02-07",
+      "date": "2026-02-11",
       "times": [
-        "See website"
+        "10:00 PM",
+        "3:15 PM",
+        "4:00 PM",
+        "7:00 PM",
+        "9:30 PM"
       ],
       "format": null,
       "director": null,
       "year": null,
-      "ticket_url": "https://drafthouse.com/chicago/show/if-beale-street-could-talk"
-    },
-    {
-      "title": "Interview with the Vampire",
-      "theater": "Alamo Drafthouse",
-      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
-      "address": "3519 N Clark St",
-      "date": "2026-02-07",
-      "times": [
-        "See website"
-      ],
-      "format": null,
-      "director": null,
-      "year": null,
-      "ticket_url": "https://drafthouse.com/chicago/show/interview-with-the-vampire-the-vampire-chronicles"
-    },
-    {
-      "title": "Saving Face",
-      "theater": "Alamo Drafthouse",
-      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
-      "address": "3519 N Clark St",
-      "date": "2026-02-07",
-      "times": [
-        "See website"
-      ],
-      "format": null,
-      "director": null,
-      "year": null,
-      "ticket_url": "https://drafthouse.com/chicago/show/saving-face"
-    },
-    {
-      "title": "Titanic (1997)",
-      "theater": "Alamo Drafthouse",
-      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
-      "address": "3519 N Clark St",
-      "date": "2026-02-07",
-      "times": [
-        "See website"
-      ],
-      "format": null,
-      "director": null,
-      "year": null,
-      "ticket_url": "https://drafthouse.com/chicago/show/titanic-1997"
-    },
-    {
-      "title": "Twin Peaks: Fire Walk with Me",
-      "theater": "Alamo Drafthouse",
-      "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
-      "address": "3519 N Clark St",
-      "date": "2026-02-07",
-      "times": [
-        "See website"
-      ],
-      "format": null,
-      "director": null,
-      "year": null,
-      "ticket_url": "https://drafthouse.com/chicago/show/twin-peaks-fire-walk-with-me"
+      "ticket_url": "https://drafthouse.com/chicago/show/the-moment"
     },
     {
       "title": "The Voice of Hind Rajab",
       "theater": "Alamo Drafthouse",
       "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
       "address": "3519 N Clark St",
-      "date": "2026-02-07",
+      "date": "2026-02-11",
       "times": [
-        "See website"
+        "5:00 PM"
       ],
       "format": null,
       "director": null,
@@ -897,32 +1057,32 @@
       "ticket_url": "https://drafthouse.com/chicago/show/the-voice-of-hind-rajab"
     },
     {
-      "title": "Wetiko",
+      "title": "Twin Peaks: Fire Walk with Me",
       "theater": "Alamo Drafthouse",
       "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
       "address": "3519 N Clark St",
-      "date": "2026-02-07",
+      "date": "2026-02-14",
       "times": [
-        "See website"
+        "9:45 PM"
       ],
       "format": null,
       "director": null,
       "year": null,
-      "ticket_url": "https://drafthouse.com/chicago/show/wetiko"
+      "ticket_url": "https://drafthouse.com/chicago/show/twin-peaks-fire-walk-with-me"
     },
     {
-      "title": "FEAR (1996)",
+      "title": "Anything That Moves",
       "theater": "Alamo Drafthouse",
       "theater_url": "https://drafthouse.com/chicago/theater/wrigleyville",
       "address": "3519 N Clark St",
-      "date": "2026-02-07",
+      "date": "2026-02-11",
       "times": [
-        "See website"
+        "9:30 PM"
       ],
       "format": null,
       "director": null,
       "year": null,
-      "ticket_url": "https://drafthouse.com/chicago/show/weird-wednesday-fear-1996"
+      "ticket_url": "https://drafthouse.com/chicago/show/anything-that-moves"
     }
   ]
 }

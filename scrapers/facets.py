@@ -54,8 +54,8 @@ def scrape_facets():
 
         # Skip navigation and non-movie items
         skip_words = ['calendar', 'cinema', 'donate', 'about', 'contact', 'view all',
-                      'film camps', 'film camp', 'critic\'s cut', 'critics cut',
-                      'trivia', 'party', 'membership', 'gift', 'rental']
+                      'film camps', 'film camp', 'critic', 'cut 2025', 'wrap party',
+                      'trivia', 'party', 'membership', 'gift', 'rental', 'sunday\'s best']
         title_lower = title.lower()
         if title_lower in skip_words or any(s in title_lower for s in skip_words):
             continue
