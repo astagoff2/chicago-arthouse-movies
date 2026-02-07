@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicago Art House Cinema</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Chicago Art House Cinema</h1>
+        <p class="subtitle">Independent & Repertory Film Screenings</p>
+    </header>
+
+    <main>
+        <section class="week-info">
+            <p class="week-label">Week of {{ week_of }}</p>
+            <p class="updated">Last updated {{ last_updated }}</p>
+        </section>
+
+        {% for date, screenings in movies_by_date.items() %}
+        <section class="day-section">
+            <h2 class="day-header">{{ date | format_day }}</h2>
+
+            <div class="screenings">
+                {% for movie in screenings %}
+                <article class="screening">
+                    <div class="screening-main">
+                        <h3 class="film-title">{{ movie.title }}</h3>
+                        <div class="film-meta">
+                            {% if movie.director %}<span class="director">{{ movie.director }}</span>{% endif %}
+                            {% if movie.year %}<span class="year">{{ movie.year }}</span>{% endif %}
+                            {% if movie.format %}<span class="format">{{ movie.format }}</span>{% endif %}
+                        </div>
+                    </div>
+                    <div class="screening-details">
+                        <a href="{{ movie.theater_url }}" class="theater" target="_blank" rel="noopener">{{ movie.theater }}</a>
+                        <div class="times">
+                            {% for time in movie.times %}
+                            <span class="time">{{ time }}</span>
+                            {% endfor %}
+                        </div>
+                        <a href="{{ movie.ticket_url }}" class="tickets-link" target="_blank" rel="noopener">Tickets</a>
+                    </div>
+                </article>
+                {% endfor %}
+            </div>
+        </section>
+        {% endfor %}
+
+        {% if not movies_by_date %}
+        <section class="no-screenings">
+            <p>No screenings found for this week. Check back soon.</p>
+        </section>
+        {% endif %}
+    </main>
+
+    <footer>
+        <div class="theaters-list">
+            <h4>Theaters</h4>
+            <ul>
+                <li><a href="https://www.siskelfilmcenter.org" target="_blank" rel="noopener">Gene Siskel Film Center</a></li>
+                <li><a href="https://docfilms.org" target="_blank" rel="noopener">Doc Films</a></li>
+                <li><a href="https://musicboxtheatre.com" target="_blank" rel="noopener">Music Box Theatre</a></li>
+                <li><a href="https://thelogantheatre.com" target="_blank" rel="noopener">Logan Theatre</a></li>
+                <li><a href="https://www.facets.org" target="_blank" rel="noopener">Facets</a></li>
+            </ul>
+        </div>
+        <p class="footer-note">Showtimes scraped from theater websites. Verify before attending.</p>
+    </footer>
+</body>
+</html>

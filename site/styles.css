@@ -1,0 +1,270 @@
+/* Chicago Art House Cinema - Styles */
+
+:root {
+    --bg: #FDFCF9;
+    --bg-alt: #F5F3EE;
+    --text: #1a1a1a;
+    --text-muted: #666;
+    --text-light: #888;
+    --accent: #8B4513;
+    --border: #e0ddd5;
+    --serif: 'Playfair Display', Georgia, serif;
+    --sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--sans);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    padding: 3rem 2rem 2rem;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+}
+
+header h1 {
+    font-family: var(--serif);
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5rem;
+}
+
+header .subtitle {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-weight: 300;
+}
+
+/* Main */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+/* Week Info */
+.week-info {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.week-label {
+    font-family: var(--serif);
+    font-size: 1.125rem;
+    font-style: italic;
+    color: var(--text);
+}
+
+.updated {
+    font-size: 0.75rem;
+    color: var(--text-light);
+    margin-top: 0.25rem;
+}
+
+/* Day Sections */
+.day-section {
+    margin-bottom: 3rem;
+}
+
+.day-header {
+    font-family: var(--serif);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+}
+
+/* Screenings */
+.screenings {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.screening {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--bg-alt);
+}
+
+.screening:last-child {
+    border-bottom: none;
+}
+
+.screening:hover {
+    background: var(--bg-alt);
+    margin: 0 -1rem;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.screening-main {
+    flex: 1;
+}
+
+.film-title {
+    font-family: var(--serif);
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.film-meta {
+    display: flex;
+    gap: 0.75rem;
+    font-size: 0.8125rem;
+    color: var(--text-muted);
+}
+
+.film-meta span::after {
+    content: '·';
+    margin-left: 0.75rem;
+    color: var(--text-light);
+}
+
+.film-meta span:last-child::after {
+    display: none;
+}
+
+.format {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+}
+
+/* Screening Details */
+.screening-details {
+    text-align: right;
+    flex-shrink: 0;
+}
+
+.theater {
+    display: block;
+    font-size: 0.8125rem;
+    color: var(--text);
+    text-decoration: none;
+    margin-bottom: 0.25rem;
+}
+
+.theater:hover {
+    color: var(--accent);
+}
+
+.times {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+}
+
+.time {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.tickets-link {
+    font-size: 0.75rem;
+    color: var(--accent);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+}
+
+.tickets-link:hover {
+    text-decoration: underline;
+}
+
+/* No Screenings */
+.no-screenings {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid var(--border);
+    padding: 2rem 1.5rem;
+    max-width: 800px;
+    margin: 2rem auto 0;
+}
+
+.theaters-list h4 {
+    font-family: var(--serif);
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin-bottom: 0.75rem;
+    color: var(--text-muted);
+}
+
+.theaters-list ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+}
+
+.theaters-list a {
+    font-size: 0.8125rem;
+    color: var(--text);
+    text-decoration: none;
+}
+
+.theaters-list a:hover {
+    color: var(--accent);
+}
+
+.footer-note {
+    font-size: 0.6875rem;
+    color: var(--text-light);
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.875rem;
+    }
+
+    .screening {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .screening-details {
+        text-align: left;
+    }
+
+    .times {
+        justify-content: flex-start;
+    }
+}
