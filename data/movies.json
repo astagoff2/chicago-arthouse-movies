@@ -1,7 +1,525 @@
 {
-  "last_updated": "2026-02-07T15:44:12.196618",
+  "last_updated": "2026-02-07T15:52:45.705024",
   "week_of": "2026-02-07",
   "movies": [
+    {
+      "title": "MY UNDESIRABLE FRIENDS: PART I \u2014 LAST AIR IN MOSCOW",
+      "theater": "Gene Siskel Film Center",
+      "theater_url": "https://www.siskelfilmcenter.org",
+      "address": "164 N State St",
+      "date": "2026-02-07",
+      "times": [
+        "See website"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://www.siskelfilmcenter.org/my-undesirable-friends"
+    },
+    {
+      "title": "QUEEN KELLY",
+      "theater": "Gene Siskel Film Center",
+      "theater_url": "https://www.siskelfilmcenter.org",
+      "address": "164 N State St",
+      "date": "2026-02-07",
+      "times": [
+        "See website"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://www.siskelfilmcenter.org/queen-kelly"
+    },
+    {
+      "title": "SPACE IS THE PLACE",
+      "theater": "Gene Siskel Film Center",
+      "theater_url": "https://www.siskelfilmcenter.org",
+      "address": "164 N State St",
+      "date": "2026-02-07",
+      "times": [
+        "See website"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://www.siskelfilmcenter.org/space-place"
+    },
+    {
+      "title": "TWO BY MIKE DE LEON: BATCH '81",
+      "theater": "Gene Siskel Film Center",
+      "theater_url": "https://www.siskelfilmcenter.org",
+      "address": "164 N State St",
+      "date": "2026-02-07",
+      "times": [
+        "See website"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://www.siskelfilmcenter.org/batch-81"
+    },
+    {
+      "title": "BLACK HARVEST ENCORE \u2013 FROM THE BLOCK SHORTS PROGRAM",
+      "theater": "Gene Siskel Film Center",
+      "theater_url": "https://www.siskelfilmcenter.org",
+      "address": "164 N State St",
+      "date": "2026-02-07",
+      "times": [
+        "See website"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://www.siskelfilmcenter.org/from-block"
+    },
+    {
+      "title": "MAGELLAN",
+      "theater": "Gene Siskel Film Center",
+      "theater_url": "https://www.siskelfilmcenter.org",
+      "address": "164 N State St",
+      "date": "2026-02-07",
+      "times": [
+        "See website"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://www.siskelfilmcenter.org/magellan"
+    },
+    {
+      "title": "A POET",
+      "theater": "Gene Siskel Film Center",
+      "theater_url": "https://www.siskelfilmcenter.org",
+      "address": "164 N State St",
+      "date": "2026-02-07",
+      "times": [
+        "See website"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://www.siskelfilmcenter.org/poet"
+    },
+    {
+      "title": "HYENAS",
+      "theater": "Gene Siskel Film Center",
+      "theater_url": "https://www.siskelfilmcenter.org",
+      "address": "164 N State St",
+      "date": "2026-02-07",
+      "times": [
+        "See website"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://www.siskelfilmcenter.org/hyenas"
+    },
+    {
+      "title": "THX 1138 \u2013 DIRECTOR'S CUT",
+      "theater": "Gene Siskel Film Center",
+      "theater_url": "https://www.siskelfilmcenter.org",
+      "address": "164 N State St",
+      "date": "2026-02-07",
+      "times": [
+        "See website"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://www.siskelfilmcenter.org/thx-1138"
+    },
+    {
+      "title": "BLACK HARVEST ENCORE \u2013 BLKNWS: TERMS & CONDITIONS",
+      "theater": "Gene Siskel Film Center",
+      "theater_url": "https://www.siskelfilmcenter.org",
+      "address": "164 N State St",
+      "date": "2026-02-07",
+      "times": [
+        "See website"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://www.siskelfilmcenter.org/blknws"
+    },
+    {
+      "title": "COME BACK, AFRICA",
+      "theater": "Gene Siskel Film Center",
+      "theater_url": "https://www.siskelfilmcenter.org",
+      "address": "164 N State St",
+      "date": "2026-02-07",
+      "times": [
+        "See website"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://www.siskelfilmcenter.org/come-back-africa"
+    },
+    {
+      "title": "PRIIT P\u00c4RN AND OLGA P\u00c4RN: LUNA ROSSA",
+      "theater": "Gene Siskel Film Center",
+      "theater_url": "https://www.siskelfilmcenter.org",
+      "address": "164 N State St",
+      "date": "2026-02-07",
+      "times": [
+        "See website"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://www.siskelfilmcenter.org/luna-rossa"
+    },
+    {
+      "title": "PAYING FOR IT",
+      "theater": "Gene Siskel Film Center",
+      "theater_url": "https://www.siskelfilmcenter.org",
+      "address": "164 N State St",
+      "date": "2026-02-07",
+      "times": [
+        "See website"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://www.siskelfilmcenter.org/paying-it"
+    },
+    {
+      "title": "MY FATHER'S SHADOW",
+      "theater": "Gene Siskel Film Center",
+      "theater_url": "https://www.siskelfilmcenter.org",
+      "address": "164 N State St",
+      "date": "2026-02-07",
+      "times": [
+        "See website"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://www.siskelfilmcenter.org/my-fathers-shadow"
+    },
+    {
+      "title": "ETERNAL SUNSHINE OF THE SPOTLESS MIND",
+      "theater": "Gene Siskel Film Center",
+      "theater_url": "https://www.siskelfilmcenter.org",
+      "address": "164 N State St",
+      "date": "2026-02-07",
+      "times": [
+        "See website"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://www.siskelfilmcenter.org/eternal-sunshine"
+    },
+    {
+      "title": "CONVERSATION PIECE",
+      "theater": "Gene Siskel Film Center",
+      "theater_url": "https://www.siskelfilmcenter.org",
+      "address": "164 N State St",
+      "date": "2026-02-07",
+      "times": [
+        "See website"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://www.siskelfilmcenter.org/conversation-piece"
+    },
+    {
+      "title": "STALKER",
+      "theater": "Gene Siskel Film Center",
+      "theater_url": "https://www.siskelfilmcenter.org",
+      "address": "164 N State St",
+      "date": "2026-02-07",
+      "times": [
+        "See website"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://www.siskelfilmcenter.org/stalker"
+    },
+    {
+      "title": "TWO BY MIKE DE LEON: KISAPMATA",
+      "theater": "Gene Siskel Film Center",
+      "theater_url": "https://www.siskelfilmcenter.org",
+      "address": "164 N State St",
+      "date": "2026-02-07",
+      "times": [
+        "See website"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://www.siskelfilmcenter.org/kisapmata"
+    },
+    {
+      "title": "SAMBIZANGA",
+      "theater": "Gene Siskel Film Center",
+      "theater_url": "https://www.siskelfilmcenter.org",
+      "address": "164 N State St",
+      "date": "2026-02-07",
+      "times": [
+        "See website"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://www.siskelfilmcenter.org/sambizanga"
+    },
+    {
+      "title": "ALPHAVILLE",
+      "theater": "Gene Siskel Film Center",
+      "theater_url": "https://www.siskelfilmcenter.org",
+      "address": "164 N State St",
+      "date": "2026-02-07",
+      "times": [
+        "See website"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://www.siskelfilmcenter.org/alphaville"
+    },
+    {
+      "title": "IDENTITY: A CZECH GRAPHIC DESIGN LOVE STORY",
+      "theater": "Gene Siskel Film Center",
+      "theater_url": "https://www.siskelfilmcenter.org",
+      "address": "164 N State St",
+      "date": "2026-02-07",
+      "times": [
+        "See website"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://www.siskelfilmcenter.org/identity"
+    },
+    {
+      "title": "CUTTING THROUGH ROCKS",
+      "theater": "Gene Siskel Film Center",
+      "theater_url": "https://www.siskelfilmcenter.org",
+      "address": "164 N State St",
+      "date": "2026-02-07",
+      "times": [
+        "See website"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://www.siskelfilmcenter.org/cutting-through-rocks"
+    },
+    {
+      "title": "LIVING IN A PIECE OF FURNITURE: GERRIT RIETVELD\u2019S HOUSES",
+      "theater": "Gene Siskel Film Center",
+      "theater_url": "https://www.siskelfilmcenter.org",
+      "address": "164 N State St",
+      "date": "2026-02-07",
+      "times": [
+        "See website"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://www.siskelfilmcenter.org/living-piece-furniture"
+    },
+    {
+      "title": "BUILDING ON THE EDGE",
+      "theater": "Gene Siskel Film Center",
+      "theater_url": "https://www.siskelfilmcenter.org",
+      "address": "164 N State St",
+      "date": "2026-02-07",
+      "times": [
+        "See website"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://www.siskelfilmcenter.org/building-edge"
+    },
+    {
+      "title": "CHANGING LANES",
+      "theater": "Gene Siskel Film Center",
+      "theater_url": "https://www.siskelfilmcenter.org",
+      "address": "164 N State St",
+      "date": "2026-02-07",
+      "times": [
+        "See website"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://www.siskelfilmcenter.org/changing-lanes"
+    },
+    {
+      "title": "PRIMER",
+      "theater": "Gene Siskel Film Center",
+      "theater_url": "https://www.siskelfilmcenter.org",
+      "address": "164 N State St",
+      "date": "2026-02-07",
+      "times": [
+        "See website"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://www.siskelfilmcenter.org/primer"
+    },
+    {
+      "title": "LEWERENTZ DIVINE DARKNESS",
+      "theater": "Gene Siskel Film Center",
+      "theater_url": "https://www.siskelfilmcenter.org",
+      "address": "164 N State St",
+      "date": "2026-02-07",
+      "times": [
+        "See website"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://www.siskelfilmcenter.org/lewerentz"
+    },
+    {
+      "title": "THE RAZOR'S EDGE",
+      "theater": "Gene Siskel Film Center",
+      "theater_url": "https://www.siskelfilmcenter.org",
+      "address": "164 N State St",
+      "date": "2026-02-07",
+      "times": [
+        "See website"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://www.siskelfilmcenter.org/razors-edge"
+    },
+    {
+      "title": "WE THE OTHERS",
+      "theater": "Gene Siskel Film Center",
+      "theater_url": "https://www.siskelfilmcenter.org",
+      "address": "164 N State St",
+      "date": "2026-02-07",
+      "times": [
+        "See website"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://www.siskelfilmcenter.org/we-others"
+    },
+    {
+      "title": "AT THE GARDEN'S PACE",
+      "theater": "Gene Siskel Film Center",
+      "theater_url": "https://www.siskelfilmcenter.org",
+      "address": "164 N State St",
+      "date": "2026-02-07",
+      "times": [
+        "See website"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://www.siskelfilmcenter.org/gardens-pace"
+    },
+    {
+      "title": "THE SPACE ARCHITECT",
+      "theater": "Gene Siskel Film Center",
+      "theater_url": "https://www.siskelfilmcenter.org",
+      "address": "164 N State St",
+      "date": "2026-02-07",
+      "times": [
+        "See website"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://www.siskelfilmcenter.org/space-architect"
+    },
+    {
+      "title": "MIRALLES",
+      "theater": "Gene Siskel Film Center",
+      "theater_url": "https://www.siskelfilmcenter.org",
+      "address": "164 N State St",
+      "date": "2026-02-07",
+      "times": [
+        "See website"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://www.siskelfilmcenter.org/miralles"
+    },
+    {
+      "title": "OFF CENTER: PHILIP MALLORY JONES",
+      "theater": "Gene Siskel Film Center",
+      "theater_url": "https://www.siskelfilmcenter.org",
+      "address": "164 N State St",
+      "date": "2026-02-07",
+      "times": [
+        "See website"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://www.siskelfilmcenter.org/philip-mallory-jones"
+    },
+    {
+      "title": "KE\u00cfTA: THE HERITAGE OF THE GRIOT",
+      "theater": "Gene Siskel Film Center",
+      "theater_url": "https://www.siskelfilmcenter.org",
+      "address": "164 N State St",
+      "date": "2026-02-07",
+      "times": [
+        "See website"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://www.siskelfilmcenter.org/keita"
+    },
+    {
+      "title": "KIOTO AOKI: FINDINGS",
+      "theater": "Gene Siskel Film Center",
+      "theater_url": "https://www.siskelfilmcenter.org",
+      "address": "164 N State St",
+      "date": "2026-02-07",
+      "times": [
+        "See website"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://www.siskelfilmcenter.org/findings"
+    },
+    {
+      "title": "NATCHEZ",
+      "theater": "Gene Siskel Film Center",
+      "theater_url": "https://www.siskelfilmcenter.org",
+      "address": "164 N State St",
+      "date": "2026-02-07",
+      "times": [
+        "See website"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://www.siskelfilmcenter.org/natchez"
+    },
+    {
+      "title": "THE BEIRUT TRILOGY",
+      "theater": "Gene Siskel Film Center",
+      "theater_url": "https://www.siskelfilmcenter.org",
+      "address": "164 N State St",
+      "date": "2026-02-07",
+      "times": [
+        "See website"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://www.siskelfilmcenter.org/beirut-trilogy"
+    },
     {
       "title": "Museum Hours",
       "theater": "Doc Films",
