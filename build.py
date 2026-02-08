@@ -91,15 +91,42 @@ def save_data(movies, output_path):
     print(f"Saved {len(movies)} screenings to {output_path}")
 
 
+def time_sort_key(movie):
+    """Convert first showtime to sortable value."""
+    times = movie.get('times', [])
+    if not times or times[0] == 'See website':
+        return (2, 0)  # Put "See website" at end
+
+    time_str = times[0].lower().strip()
+    try:
+        # Parse time like "7:00 pm" or "11:30am"
+        import re
+        match = re.match(r'(\d{1,2}):(\d{2})\s*(am|pm)', time_str)
+        if match:
+            hour = int(match.group(1))
+            minute = int(match.group(2))
+            is_pm = match.group(3) == 'pm'
+
+            if is_pm and hour != 12:
+                hour += 12
+            elif not is_pm and hour == 12:
+                hour = 0
+
+            return (0, hour * 60 + minute)
+    except:
+        pass
+    return (1, 0)  # Unknown times in middle
+
+
 def group_by_date(movies):
-    """Group movies by date, sorted chronologically."""
+    """Group movies by date, sorted chronologically, with times sorted within each day."""
     by_date = defaultdict(list)
     for movie in movies:
         by_date[movie['date']].append(movie)
 
-    # Sort dates and return as ordered dict
+    # Sort dates and sort movies within each date by showtime
     sorted_dates = sorted(by_date.keys())
-    return {date: by_date[date] for date in sorted_dates}
+    return {date: sorted(by_date[date], key=time_sort_key) for date in sorted_dates}
 
 
 def generate_html(movies, template_dir, output_path):
