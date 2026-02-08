@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chicago Art House Cinema</title>
+
+    <!-- OpenGraph Meta Tags -->
+    <meta property="og:title" content="Chicago Art House Cinema">
+    <meta property="og:description" content="Weekly showtimes for Chicago's independent and repertory theaters: Gene Siskel, Doc Films, Music Box, Logan, Alamo Drafthouse, and more.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://astagoff2.github.io/chicago-arthouse-movies/">
+    <meta property="og:image" content="https://images.squarespace-cdn.com/content/v1/5403d729e4b0903f2ff85444/1618950305546-QR2QO40JXWD3VTVYJPLI/image.jpeg?format=1200w">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Chicago Art House Cinema">
+    <meta name="twitter:description" content="Weekly showtimes for Chicago's independent and repertory theaters.">
+    <meta name="twitter:image" content="https://images.squarespace-cdn.com/content/v1/5403d729e4b0903f2ff85444/1618950305546-QR2QO40JXWD3VTVYJPLI/image.jpeg?format=1200w">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
@@ -19,8 +31,172 @@
     <main>
         <section class="week-info">
             <p class="week-label">Week of February 8, 2026</p>
-            <p class="updated">Last updated February 8 at 1:35 AM</p>
+            <p class="updated">Last updated February 8 at 1:42 AM</p>
         </section>
+
+        <!-- Theater Filter -->
+        <section class="theater-filter">
+            <button class="filter-btn active" data-theater="all">All</button>
+            
+            <button class="filter-btn" data-theater="Alamo Drafthouse">Alamo</button>
+            
+            <button class="filter-btn" data-theater="Doc Films">Doc</button>
+            
+            <button class="filter-btn" data-theater="Gene Siskel Film Center">Siskel</button>
+            
+            <button class="filter-btn" data-theater="Logan Theatre">Logan</button>
+            
+            <button class="filter-btn" data-theater="Music Box Theatre">Music Box</button>
+            
+        </section>
+
+        <!-- Tonight Section -->
+        
+        <section class="tonight-section">
+            <h2 class="tonight-header">Tonight</h2>
+            <div class="screenings">
+                
+                <div class="screening" data-theater="Gene Siskel Film Center">
+                    <span class="film-title">My Undesirable Friends: Part I — Last Air In Moscow</span>
+                    <a href="https://www.siskelfilmcenter.org" class="film-venue" target="_blank" rel="noopener">Gene Siskel Film Center</a>
+                    <a href="https://www.siskelfilmcenter.org/my-undesirable-friends" class="film-times" target="_blank" rel="noopener">11:00 am</a>
+                </div>
+                
+                <div class="screening" data-theater="Gene Siskel Film Center">
+                    <span class="film-title">Hyenas</span>
+                    <a href="https://www.siskelfilmcenter.org" class="film-venue" target="_blank" rel="noopener">Gene Siskel Film Center</a>
+                    <a href="https://www.siskelfilmcenter.org/hyenas" class="film-times" target="_blank" rel="noopener">12:00 pm</a>
+                </div>
+                
+                <div class="screening" data-theater="Gene Siskel Film Center">
+                    <span class="film-title">Thx 1138 – Director'S Cut</span>
+                    <a href="https://www.siskelfilmcenter.org" class="film-venue" target="_blank" rel="noopener">Gene Siskel Film Center</a>
+                    <a href="https://www.siskelfilmcenter.org/thx-1138" class="film-times" target="_blank" rel="noopener">2:30 pm</a>
+                </div>
+                
+                <div class="screening" data-theater="Gene Siskel Film Center">
+                    <span class="film-title">Black Harvest Encore – Blknws: Terms & Conditions</span>
+                    <a href="https://www.siskelfilmcenter.org" class="film-venue" target="_blank" rel="noopener">Gene Siskel Film Center</a>
+                    <a href="https://www.siskelfilmcenter.org/blknws" class="film-times" target="_blank" rel="noopener">4:30 pm</a>
+                </div>
+                
+                <div class="screening" data-theater="Gene Siskel Film Center">
+                    <span class="film-title">A Poet</span>
+                    <a href="https://www.siskelfilmcenter.org" class="film-venue" target="_blank" rel="noopener">Gene Siskel Film Center</a>
+                    <a href="https://www.siskelfilmcenter.org/poet" class="film-times" target="_blank" rel="noopener">6:00 pm</a>
+                </div>
+                
+                <div class="screening" data-theater="Doc Films">
+                    <span class="film-title">Black Narcissus <span class="format">DCP</span></span>
+                    <a href="https://docfilms.org" class="film-venue" target="_blank" rel="noopener">Doc Films</a>
+                    <a href="https://docfilms.org/calendar/2026winter/board-picks#screening-3" class="film-times" target="_blank" rel="noopener">4:00 PM</a>
+                </div>
+                
+                <div class="screening" data-theater="Doc Films">
+                    <span class="film-title">Côté Jardin / Rien d’extraordinaire / Jardin du soleil / Fleur de Sel / Jardin du Marais / Jardin du Sel / Sous le Soleil / Sources <span class="format">16mm</span></span>
+                    <a href="https://docfilms.org" class="film-venue" target="_blank" rel="noopener">Doc Films</a>
+                    <a href="https://docfilms.org" class="film-times" target="_blank" rel="noopener">7:00 PM</a>
+                </div>
+                
+                <div class="screening" data-theater="Music Box Theatre">
+                    <span class="film-title">The Testament of Ann Lee <span class="format">DCP</span></span>
+                    <a href="https://musicboxtheatre.com" class="film-venue" target="_blank" rel="noopener">Music Box Theatre</a>
+                    <a href="https://musicboxtheatre.com/films-and-events/the-testament-of-ann-lee" class="film-times" target="_blank" rel="noopener">2:00pm, 5:00pm, 8:00pm</a>
+                </div>
+                
+                <div class="screening" data-theater="Logan Theatre">
+                    <span class="film-title">The Secret Agent (Subtitled)</span>
+                    <a href="https://thelogantheatre.com" class="film-venue" target="_blank" rel="noopener">Logan Theatre</a>
+                    <a href="https://thelogantheatre.com/showtimes" class="film-times" target="_blank" rel="noopener">1:00 PM, 7:00 PM</a>
+                </div>
+                
+                <div class="screening" data-theater="Logan Theatre">
+                    <span class="film-title">Bugonia</span>
+                    <a href="https://thelogantheatre.com" class="film-venue" target="_blank" rel="noopener">Logan Theatre</a>
+                    <a href="https://thelogantheatre.com/showtimes" class="film-times" target="_blank" rel="noopener">4:20 PM</a>
+                </div>
+                
+                <div class="screening" data-theater="Logan Theatre">
+                    <span class="film-title">Network (1976)</span>
+                    <a href="https://thelogantheatre.com" class="film-venue" target="_blank" rel="noopener">Logan Theatre</a>
+                    <a href="https://58699.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=51854&PLACEID=7" class="film-times" target="_blank" rel="noopener">11:00 PM</a>
+                </div>
+                
+                <div class="screening" data-theater="Logan Theatre">
+                    <span class="film-title">Whistle</span>
+                    <a href="https://thelogantheatre.com" class="film-venue" target="_blank" rel="noopener">Logan Theatre</a>
+                    <a href="https://58699.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=52645&PLACEID=8" class="film-times" target="_blank" rel="noopener">12:20 PM, 2:45 PM, 5:00 PM, 7:30 PM, 10:00 PM</a>
+                </div>
+                
+                <div class="screening" data-theater="Logan Theatre">
+                    <span class="film-title">Send Help</span>
+                    <a href="https://thelogantheatre.com" class="film-venue" target="_blank" rel="noopener">Logan Theatre</a>
+                    <a href="https://58699.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=52652&PLACEID=6" class="film-times" target="_blank" rel="noopener">12:10 PM, 2:30 PM, 5:15 PM, 7:40 PM, 10:00 PM</a>
+                </div>
+                
+                <div class="screening" data-theater="Logan Theatre">
+                    <span class="film-title">Iron Lung</span>
+                    <a href="https://thelogantheatre.com" class="film-venue" target="_blank" rel="noopener">Logan Theatre</a>
+                    <a href="https://58699.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=52654&PLACEID=9" class="film-times" target="_blank" rel="noopener">8:00 PM, 10:30 PM</a>
+                </div>
+                
+                <div class="screening" data-theater="Logan Theatre">
+                    <span class="film-title">Hamnet</span>
+                    <a href="https://thelogantheatre.com" class="film-venue" target="_blank" rel="noopener">Logan Theatre</a>
+                    <a href="https://thelogantheatre.com/showtimes" class="film-times" target="_blank" rel="noopener">12:00 PM, 2:40 PM, 5:20 PM</a>
+                </div>
+                
+                <div class="screening" data-theater="Alamo Drafthouse">
+                    <span class="film-title">28 Years Later: The Bone Temple</span>
+                    <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
+                    <a href="https://drafthouse.com/chicago/show/28-years-later-the-bone-temple" class="film-times" target="_blank" rel="noopener">7:45 PM</a>
+                </div>
+                
+                <div class="screening" data-theater="Alamo Drafthouse">
+                    <span class="film-title">The Phantom of the Opera (2004)</span>
+                    <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
+                    <a href="https://drafthouse.com/chicago/show/the-phantom-of-the-opera-2004" class="film-times" target="_blank" rel="noopener">12:00 PM</a>
+                </div>
+                
+                <div class="screening" data-theater="Alamo Drafthouse">
+                    <span class="film-title">Arco</span>
+                    <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
+                    <a href="https://drafthouse.com/chicago/show/arco" class="film-times" target="_blank" rel="noopener">11:00 AM, 2:00 PM</a>
+                </div>
+                
+                <div class="screening" data-theater="Alamo Drafthouse">
+                    <span class="film-title">Brief Encounter (1945)</span>
+                    <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
+                    <a href="https://drafthouse.com/chicago/show/brief-encounter" class="film-times" target="_blank" rel="noopener">3:30 PM</a>
+                </div>
+                
+                <div class="screening" data-theater="Alamo Drafthouse">
+                    <span class="film-title">Iron Lung</span>
+                    <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
+                    <a href="https://drafthouse.com/chicago/show/iron-lung" class="film-times" target="_blank" rel="noopener">6:45 PM</a>
+                </div>
+                
+                <div class="screening" data-theater="Alamo Drafthouse">
+                    <span class="film-title">Marty Supreme</span>
+                    <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
+                    <a href="https://drafthouse.com/chicago/show/marty-supreme" class="film-times" target="_blank" rel="noopener">11:20 AM, 3:00 PM, 6:00 PM</a>
+                </div>
+                
+                <div class="screening" data-theater="Alamo Drafthouse">
+                    <span class="film-title">No Other Choice</span>
+                    <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
+                    <a href="https://drafthouse.com/chicago/show/no-other-choice" class="film-times" target="_blank" rel="noopener">1:30 PM, 4:30 PM</a>
+                </div>
+                
+                <div class="screening" data-theater="Alamo Drafthouse">
+                    <span class="film-title">The Moment</span>
+                    <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
+                    <a href="https://drafthouse.com/chicago/show/the-moment" class="film-times" target="_blank" rel="noopener">11:15 AM, 12:30 PM, 1:00 PM, 3:15 PM, 4:00 PM, 5:00 PM, 6:15 PM, 7:00 PM, 8:00 PM</a>
+                </div>
+                
+            </div>
+        </section>
+        
 
         
         <section class="day-section">
@@ -28,91 +204,139 @@
 
             <div class="screenings">
                 
-                <div class="screening">
+                <div class="screening" data-theater="Gene Siskel Film Center">
                     <span class="film-title">My Undesirable Friends: Part I — Last Air In Moscow</span>
                     <a href="https://www.siskelfilmcenter.org" class="film-venue" target="_blank" rel="noopener">Gene Siskel Film Center</a>
                     <a href="https://www.siskelfilmcenter.org/my-undesirable-friends" class="film-times" target="_blank" rel="noopener">11:00 am</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Gene Siskel Film Center">
                     <span class="film-title">Hyenas</span>
                     <a href="https://www.siskelfilmcenter.org" class="film-venue" target="_blank" rel="noopener">Gene Siskel Film Center</a>
                     <a href="https://www.siskelfilmcenter.org/hyenas" class="film-times" target="_blank" rel="noopener">12:00 pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Gene Siskel Film Center">
                     <span class="film-title">Thx 1138 – Director'S Cut</span>
                     <a href="https://www.siskelfilmcenter.org" class="film-venue" target="_blank" rel="noopener">Gene Siskel Film Center</a>
                     <a href="https://www.siskelfilmcenter.org/thx-1138" class="film-times" target="_blank" rel="noopener">2:30 pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Gene Siskel Film Center">
                     <span class="film-title">Black Harvest Encore – Blknws: Terms & Conditions</span>
                     <a href="https://www.siskelfilmcenter.org" class="film-venue" target="_blank" rel="noopener">Gene Siskel Film Center</a>
                     <a href="https://www.siskelfilmcenter.org/blknws" class="film-times" target="_blank" rel="noopener">4:30 pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Gene Siskel Film Center">
                     <span class="film-title">A Poet</span>
                     <a href="https://www.siskelfilmcenter.org" class="film-venue" target="_blank" rel="noopener">Gene Siskel Film Center</a>
                     <a href="https://www.siskelfilmcenter.org/poet" class="film-times" target="_blank" rel="noopener">6:00 pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Doc Films">
                     <span class="film-title">Black Narcissus <span class="format">DCP</span></span>
                     <a href="https://docfilms.org" class="film-venue" target="_blank" rel="noopener">Doc Films</a>
-                    <a href="https://docfilms.org" class="film-times" target="_blank" rel="noopener">4:00 PM</a>
+                    <a href="https://docfilms.org/calendar/2026winter/board-picks#screening-3" class="film-times" target="_blank" rel="noopener">4:00 PM</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Doc Films">
+                    <span class="film-title">Côté Jardin / Rien d’extraordinaire / Jardin du soleil / Fleur de Sel / Jardin du Marais / Jardin du Sel / Sous le Soleil / Sources <span class="format">16mm</span></span>
+                    <a href="https://docfilms.org" class="film-venue" target="_blank" rel="noopener">Doc Films</a>
+                    <a href="https://docfilms.org" class="film-times" target="_blank" rel="noopener">7:00 PM</a>
+                </div>
+                
+                <div class="screening" data-theater="Music Box Theatre">
                     <span class="film-title">The Testament of Ann Lee <span class="format">DCP</span></span>
                     <a href="https://musicboxtheatre.com" class="film-venue" target="_blank" rel="noopener">Music Box Theatre</a>
                     <a href="https://musicboxtheatre.com/films-and-events/the-testament-of-ann-lee" class="film-times" target="_blank" rel="noopener">2:00pm, 5:00pm, 8:00pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Logan Theatre">
+                    <span class="film-title">The Secret Agent (Subtitled)</span>
+                    <a href="https://thelogantheatre.com" class="film-venue" target="_blank" rel="noopener">Logan Theatre</a>
+                    <a href="https://thelogantheatre.com/showtimes" class="film-times" target="_blank" rel="noopener">1:00 PM, 7:00 PM</a>
+                </div>
+                
+                <div class="screening" data-theater="Logan Theatre">
+                    <span class="film-title">Bugonia</span>
+                    <a href="https://thelogantheatre.com" class="film-venue" target="_blank" rel="noopener">Logan Theatre</a>
+                    <a href="https://thelogantheatre.com/showtimes" class="film-times" target="_blank" rel="noopener">4:20 PM</a>
+                </div>
+                
+                <div class="screening" data-theater="Logan Theatre">
+                    <span class="film-title">Network (1976)</span>
+                    <a href="https://thelogantheatre.com" class="film-venue" target="_blank" rel="noopener">Logan Theatre</a>
+                    <a href="https://58699.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=51854&PLACEID=7" class="film-times" target="_blank" rel="noopener">11:00 PM</a>
+                </div>
+                
+                <div class="screening" data-theater="Logan Theatre">
+                    <span class="film-title">Whistle</span>
+                    <a href="https://thelogantheatre.com" class="film-venue" target="_blank" rel="noopener">Logan Theatre</a>
+                    <a href="https://58699.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=52645&PLACEID=8" class="film-times" target="_blank" rel="noopener">12:20 PM, 2:45 PM, 5:00 PM, 7:30 PM, 10:00 PM</a>
+                </div>
+                
+                <div class="screening" data-theater="Logan Theatre">
+                    <span class="film-title">Send Help</span>
+                    <a href="https://thelogantheatre.com" class="film-venue" target="_blank" rel="noopener">Logan Theatre</a>
+                    <a href="https://58699.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=52652&PLACEID=6" class="film-times" target="_blank" rel="noopener">12:10 PM, 2:30 PM, 5:15 PM, 7:40 PM, 10:00 PM</a>
+                </div>
+                
+                <div class="screening" data-theater="Logan Theatre">
+                    <span class="film-title">Iron Lung</span>
+                    <a href="https://thelogantheatre.com" class="film-venue" target="_blank" rel="noopener">Logan Theatre</a>
+                    <a href="https://58699.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=52654&PLACEID=9" class="film-times" target="_blank" rel="noopener">8:00 PM, 10:30 PM</a>
+                </div>
+                
+                <div class="screening" data-theater="Logan Theatre">
+                    <span class="film-title">Hamnet</span>
+                    <a href="https://thelogantheatre.com" class="film-venue" target="_blank" rel="noopener">Logan Theatre</a>
+                    <a href="https://thelogantheatre.com/showtimes" class="film-times" target="_blank" rel="noopener">12:00 PM, 2:40 PM, 5:20 PM</a>
+                </div>
+                
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">28 Years Later: The Bone Temple</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/28-years-later-the-bone-temple" class="film-times" target="_blank" rel="noopener">7:45 PM</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">The Phantom of the Opera (2004)</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/the-phantom-of-the-opera-2004" class="film-times" target="_blank" rel="noopener">12:00 PM</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">Arco</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/arco" class="film-times" target="_blank" rel="noopener">11:00 AM, 2:00 PM</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">Brief Encounter (1945)</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/brief-encounter" class="film-times" target="_blank" rel="noopener">3:30 PM</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">Iron Lung</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/iron-lung" class="film-times" target="_blank" rel="noopener">6:45 PM</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">Marty Supreme</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/marty-supreme" class="film-times" target="_blank" rel="noopener">11:20 AM, 3:00 PM, 6:00 PM</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">No Other Choice</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/no-other-choice" class="film-times" target="_blank" rel="noopener">1:30 PM, 4:30 PM</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">The Moment</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/the-moment" class="film-times" target="_blank" rel="noopener">11:15 AM, 12:30 PM, 1:00 PM, 3:15 PM, 4:00 PM, 5:00 PM, 6:15 PM, 7:00 PM, 8:00 PM</a>
@@ -126,97 +350,97 @@
 
             <div class="screenings">
                 
-                <div class="screening">
+                <div class="screening" data-theater="Gene Siskel Film Center">
                     <span class="film-title">A Poet</span>
                     <a href="https://www.siskelfilmcenter.org" class="film-venue" target="_blank" rel="noopener">Gene Siskel Film Center</a>
                     <a href="https://www.siskelfilmcenter.org/poet" class="film-times" target="_blank" rel="noopener">5:30 pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Gene Siskel Film Center">
                     <span class="film-title">Space Is The Place</span>
                     <a href="https://www.siskelfilmcenter.org" class="film-venue" target="_blank" rel="noopener">Gene Siskel Film Center</a>
                     <a href="https://www.siskelfilmcenter.org/space-place" class="film-times" target="_blank" rel="noopener">6:00 pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Gene Siskel Film Center">
                     <span class="film-title">Magellan</span>
                     <a href="https://www.siskelfilmcenter.org" class="film-venue" target="_blank" rel="noopener">Gene Siskel Film Center</a>
                     <a href="https://www.siskelfilmcenter.org/magellan" class="film-times" target="_blank" rel="noopener">8:00 pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Gene Siskel Film Center">
                     <span class="film-title">Queen Kelly</span>
                     <a href="https://www.siskelfilmcenter.org" class="film-venue" target="_blank" rel="noopener">Gene Siskel Film Center</a>
                     <a href="https://www.siskelfilmcenter.org/queen-kelly" class="film-times" target="_blank" rel="noopener">8:00 pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Music Box Theatre">
                     <span class="film-title">Kill Bill: The Whole Bloody Affair <span class="format">70mm</span></span>
                     <a href="https://musicboxtheatre.com" class="film-venue" target="_blank" rel="noopener">Music Box Theatre</a>
                     <a href="https://musicboxtheatre.com/films-and-events/kill-bill-the-whole-bloody-affair" class="film-times" target="_blank" rel="noopener">1:00pm, 6:30pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Music Box Theatre">
                     <span class="film-title">The Testament of Ann Lee <span class="format">DCP</span></span>
                     <a href="https://musicboxtheatre.com" class="film-venue" target="_blank" rel="noopener">Music Box Theatre</a>
                     <a href="https://musicboxtheatre.com/films-and-events/the-testament-of-ann-lee" class="film-times" target="_blank" rel="noopener">1:15pm, 4:15pm, 7:30pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">28 Years Later: The Bone Temple</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/28-years-later-the-bone-temple" class="film-times" target="_blank" rel="noopener">10:00 PM, 6:45 PM</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">Arco</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/arco" class="film-times" target="_blank" rel="noopener">3:30 PM</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">Twin Peaks</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/twin-peaks" class="film-times" target="_blank" rel="noopener">4:00 PM</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">Repo Man</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/repo-man" class="film-times" target="_blank" rel="noopener">6:30 PM</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">Iron Lung</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/iron-lung" class="film-times" target="_blank" rel="noopener">6:15 PM, 9:45 PM</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">Marty Supreme</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/marty-supreme" class="film-times" target="_blank" rel="noopener">2:45 PM, 6:00 PM, 9:15 PM</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">Mystery Machine (2/9/2026)</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/mystery-machine-2-9-2026" class="film-times" target="_blank" rel="noopener">7:30 PM</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">No Other Choice</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/no-other-choice" class="film-times" target="_blank" rel="noopener">3:15 PM</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">OBEX</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/obex" class="film-times" target="_blank" rel="noopener">10:15 PM</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">The Moment</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/the-moment" class="film-times" target="_blank" rel="noopener">10:00 PM, 3:00 PM, 4:00 PM, 7:00 PM, 9:30 PM</a>
@@ -230,109 +454,109 @@
 
             <div class="screenings">
                 
-                <div class="screening">
+                <div class="screening" data-theater="Gene Siskel Film Center">
                     <span class="film-title">A Poet</span>
                     <a href="https://www.siskelfilmcenter.org" class="film-venue" target="_blank" rel="noopener">Gene Siskel Film Center</a>
                     <a href="https://www.siskelfilmcenter.org/poet" class="film-times" target="_blank" rel="noopener">5:30 pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Gene Siskel Film Center">
                     <span class="film-title">Thx 1138 – Director'S Cut</span>
                     <a href="https://www.siskelfilmcenter.org" class="film-venue" target="_blank" rel="noopener">Gene Siskel Film Center</a>
                     <a href="https://www.siskelfilmcenter.org/thx-1138" class="film-times" target="_blank" rel="noopener">6:00 pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Gene Siskel Film Center">
                     <span class="film-title">Magellan</span>
                     <a href="https://www.siskelfilmcenter.org" class="film-venue" target="_blank" rel="noopener">Gene Siskel Film Center</a>
                     <a href="https://www.siskelfilmcenter.org/magellan" class="film-times" target="_blank" rel="noopener">8:00 pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Gene Siskel Film Center">
                     <span class="film-title">Queen Kelly</span>
                     <a href="https://www.siskelfilmcenter.org" class="film-venue" target="_blank" rel="noopener">Gene Siskel Film Center</a>
                     <a href="https://www.siskelfilmcenter.org/queen-kelly" class="film-times" target="_blank" rel="noopener">8:00 pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Music Box Theatre">
                     <span class="film-title">Arco <span class="format">DCP</span></span>
                     <a href="https://musicboxtheatre.com" class="film-venue" target="_blank" rel="noopener">Music Box Theatre</a>
                     <a href="https://musicboxtheatre.com/films-and-events/arco" class="film-times" target="_blank" rel="noopener">4:00pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Music Box Theatre">
                     <span class="film-title">The Testament of Ann Lee <span class="format">DCP</span></span>
                     <a href="https://musicboxtheatre.com" class="film-venue" target="_blank" rel="noopener">Music Box Theatre</a>
                     <a href="https://musicboxtheatre.com/films-and-events/the-testament-of-ann-lee" class="film-times" target="_blank" rel="noopener">4:15pm, 7:30pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Music Box Theatre">
                     <span class="film-title">West Side Story (2021) <span class="format">DCP</span></span>
                     <a href="https://musicboxtheatre.com" class="film-venue" target="_blank" rel="noopener">Music Box Theatre</a>
                     <a href="https://musicboxtheatre.com/films-and-events/west-side-story-2021" class="film-times" target="_blank" rel="noopener">7:00pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">28 Years Later: The Bone Temple</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/28-years-later-the-bone-temple" class="film-times" target="_blank" rel="noopener">10:15 PM, 7:15 PM</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">The Phantom of the Opera (2004)</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/the-phantom-of-the-opera-2004" class="film-times" target="_blank" rel="noopener">12:15 PM</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">Arco</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/arco" class="film-times" target="_blank" rel="noopener">11:00 AM, 3:30 PM</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">Repo Man</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/repo-man" class="film-times" target="_blank" rel="noopener">3:45 PM</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">Iron Lung</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/iron-lung" class="film-times" target="_blank" rel="noopener">6:15 PM, 9:45 PM</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">Marty Supreme</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/marty-supreme" class="film-times" target="_blank" rel="noopener">11:30 AM, 2:30 PM, 6:00 PM, 9:30 PM</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">My Best Friend's Wedding</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/my-best-friends-wedding" class="film-times" target="_blank" rel="noopener">1:30 PM</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">No Other Choice</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/no-other-choice" class="film-times" target="_blank" rel="noopener">12:00 PM, 3:15 PM</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">Jess Franco's Daughter of Dracula</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/jess-francos-daughter-of-dracula" class="film-times" target="_blank" rel="noopener">6:45 PM</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">Tales From The Crypt: Demon Knight</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/tales-from-the-crypt-demon-knight" class="film-times" target="_blank" rel="noopener">9:30 PM</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">The Moment</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/the-moment" class="film-times" target="_blank" rel="noopener">10:00 PM, 11:45 AM, 1:00 PM, 4:00 PM, 4:30 PM, 6:30 PM, 7:00 PM, 9:15 PM</a>
@@ -346,97 +570,97 @@
 
             <div class="screenings">
                 
-                <div class="screening">
+                <div class="screening" data-theater="Gene Siskel Film Center">
                     <span class="film-title">A Poet</span>
                     <a href="https://www.siskelfilmcenter.org" class="film-venue" target="_blank" rel="noopener">Gene Siskel Film Center</a>
                     <a href="https://www.siskelfilmcenter.org/poet" class="film-times" target="_blank" rel="noopener">5:30 pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Gene Siskel Film Center">
                     <span class="film-title">Come Back, Africa</span>
                     <a href="https://www.siskelfilmcenter.org" class="film-venue" target="_blank" rel="noopener">Gene Siskel Film Center</a>
                     <a href="https://www.siskelfilmcenter.org/come-back-africa" class="film-times" target="_blank" rel="noopener">6:00 pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Gene Siskel Film Center">
                     <span class="film-title">Magellan</span>
                     <a href="https://www.siskelfilmcenter.org" class="film-venue" target="_blank" rel="noopener">Gene Siskel Film Center</a>
                     <a href="https://www.siskelfilmcenter.org/magellan" class="film-times" target="_blank" rel="noopener">8:00 pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Music Box Theatre">
                     <span class="film-title">Arco <span class="format">DCP</span></span>
                     <a href="https://musicboxtheatre.com" class="film-venue" target="_blank" rel="noopener">Music Box Theatre</a>
                     <a href="https://musicboxtheatre.com/films-and-events/arco" class="film-times" target="_blank" rel="noopener">4:00pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Music Box Theatre">
                     <span class="film-title">The Princess Bride <span class="format">DCP</span></span>
                     <a href="https://musicboxtheatre.com" class="film-venue" target="_blank" rel="noopener">Music Box Theatre</a>
                     <a href="https://musicboxtheatre.com/films-and-events/the-princess-bride" class="film-times" target="_blank" rel="noopener">6:30pm, 9:00pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Music Box Theatre">
                     <span class="film-title">The Testament of Ann Lee <span class="format">DCP</span></span>
                     <a href="https://musicboxtheatre.com" class="film-venue" target="_blank" rel="noopener">Music Box Theatre</a>
                     <a href="https://musicboxtheatre.com/films-and-events/the-testament-of-ann-lee" class="film-times" target="_blank" rel="noopener">8:30pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">28 Years Later: The Bone Temple</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/28-years-later-the-bone-temple" class="film-times" target="_blank" rel="noopener">10:30 PM, 7:30 PM</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">Arco</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/arco" class="film-times" target="_blank" rel="noopener">3:45 PM</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">Iron Lung</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/iron-lung" class="film-times" target="_blank" rel="noopener">10:15 PM, 6:15 PM</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">Nirvanna The Band The Show The Movie</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/nirvanna-the-band-the-show-the-movie" class="film-times" target="_blank" rel="noopener">7:00 PM</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">Marty Supreme</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/marty-supreme" class="film-times" target="_blank" rel="noopener">2:45 PM, 6:00 PM, 9:45 PM</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">My Best Friend's Wedding</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/my-best-friends-wedding" class="film-times" target="_blank" rel="noopener">6:30 PM</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">No Other Choice</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/no-other-choice" class="film-times" target="_blank" rel="noopener">3:30 PM</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">The Moment</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/the-moment" class="film-times" target="_blank" rel="noopener">10:00 PM, 3:15 PM, 4:00 PM, 7:00 PM, 9:30 PM</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">The Voice of Hind Rajab</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/the-voice-of-hind-rajab" class="film-times" target="_blank" rel="noopener">5:00 PM</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">Anything That Moves</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/anything-that-moves" class="film-times" target="_blank" rel="noopener">9:30 PM</a>
@@ -450,49 +674,49 @@
 
             <div class="screenings">
                 
-                <div class="screening">
+                <div class="screening" data-theater="Gene Siskel Film Center">
                     <span class="film-title">Priit Pärn And Olga Pärn: Luna Rossa</span>
                     <a href="https://www.siskelfilmcenter.org" class="film-venue" target="_blank" rel="noopener">Gene Siskel Film Center</a>
                     <a href="https://www.siskelfilmcenter.org/luna-rossa" class="film-times" target="_blank" rel="noopener">6:00 pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Gene Siskel Film Center">
                     <span class="film-title">A Poet</span>
                     <a href="https://www.siskelfilmcenter.org" class="film-venue" target="_blank" rel="noopener">Gene Siskel Film Center</a>
                     <a href="https://www.siskelfilmcenter.org/poet" class="film-times" target="_blank" rel="noopener">8:30 pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Gene Siskel Film Center">
                     <span class="film-title">Two By Mike De Leon: Batch '81</span>
                     <a href="https://www.siskelfilmcenter.org" class="film-venue" target="_blank" rel="noopener">Gene Siskel Film Center</a>
                     <a href="https://www.siskelfilmcenter.org/batch-81" class="film-times" target="_blank" rel="noopener">8:30 pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Music Box Theatre">
                     <span class="film-title">Arco <span class="format">DCP</span></span>
                     <a href="https://musicboxtheatre.com" class="film-venue" target="_blank" rel="noopener">Music Box Theatre</a>
                     <a href="https://musicboxtheatre.com/films-and-events/arco" class="film-times" target="_blank" rel="noopener">4:00pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Music Box Theatre">
                     <span class="film-title">The Testament of Ann Lee <span class="format">DCP</span></span>
                     <a href="https://musicboxtheatre.com" class="film-venue" target="_blank" rel="noopener">Music Box Theatre</a>
                     <a href="https://musicboxtheatre.com/films-and-events/the-testament-of-ann-lee" class="film-times" target="_blank" rel="noopener">4:15pm, 7:15pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Music Box Theatre">
                     <span class="film-title">Lady Windermere's Fan <span class="format">35mm</span></span>
                     <a href="https://musicboxtheatre.com" class="film-venue" target="_blank" rel="noopener">Music Box Theatre</a>
                     <a href="https://musicboxtheatre.com/films-and-events/lady-windermeres-fan" class="film-times" target="_blank" rel="noopener">7:30pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">Wuthering Heights (2026)</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/wuthering-heights-2026" class="film-times" target="_blank" rel="noopener">10:00 PM, 3:00 PM, 6:30 PM, 7:00 PM</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">Nirvanna The Band The Show The Movie</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/nirvanna-the-band-the-show-the-movie" class="film-times" target="_blank" rel="noopener">10:15 PM, 7:30 PM</a>
@@ -506,79 +730,79 @@
 
             <div class="screenings">
                 
-                <div class="screening">
+                <div class="screening" data-theater="Gene Siskel Film Center">
                     <span class="film-title">Paying For It</span>
                     <a href="https://www.siskelfilmcenter.org" class="film-venue" target="_blank" rel="noopener">Gene Siskel Film Center</a>
                     <a href="https://www.siskelfilmcenter.org/paying-it" class="film-times" target="_blank" rel="noopener">6:00 pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Gene Siskel Film Center">
                     <span class="film-title">My Father'S Shadow</span>
                     <a href="https://www.siskelfilmcenter.org" class="film-venue" target="_blank" rel="noopener">Gene Siskel Film Center</a>
                     <a href="https://www.siskelfilmcenter.org/my-fathers-shadow" class="film-times" target="_blank" rel="noopener">6:15 pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Gene Siskel Film Center">
                     <span class="film-title">Paying For It</span>
                     <a href="https://www.siskelfilmcenter.org" class="film-venue" target="_blank" rel="noopener">Gene Siskel Film Center</a>
                     <a href="https://www.siskelfilmcenter.org/paying-it" class="film-times" target="_blank" rel="noopener">8:15 pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Gene Siskel Film Center">
                     <span class="film-title">Eternal Sunshine Of The Spotless Mind</span>
                     <a href="https://www.siskelfilmcenter.org" class="film-venue" target="_blank" rel="noopener">Gene Siskel Film Center</a>
                     <a href="https://www.siskelfilmcenter.org/eternal-sunshine" class="film-times" target="_blank" rel="noopener">8:30 pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Music Box Theatre">
                     <span class="film-title">Nirvanna The Band The Show The Movie <span class="format">DCP</span></span>
                     <a href="https://musicboxtheatre.com" class="film-venue" target="_blank" rel="noopener">Music Box Theatre</a>
                     <a href="https://musicboxtheatre.com/films-and-events/nirvanna-the-band-the-show-the-movie" class="film-times" target="_blank" rel="noopener">2:00pm, 4:15pm, 6:45pm, 9:15pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Music Box Theatre">
                     <span class="film-title">By Design <span class="format">DCP</span></span>
                     <a href="https://musicboxtheatre.com" class="film-venue" target="_blank" rel="noopener">Music Box Theatre</a>
                     <a href="https://musicboxtheatre.com/films-and-events/by-design" class="film-times" target="_blank" rel="noopener">2:15pm, 4:45pm, 7:15pm, 9:45pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Music Box Theatre">
                     <span class="film-title">Music Box Bingo</span>
                     <a href="https://musicboxtheatre.com" class="film-venue" target="_blank" rel="noopener">Music Box Theatre</a>
                     <a href="https://musicboxtheatre.com/films-and-events/music-box-bingo" class="film-times" target="_blank" rel="noopener">7:00pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Music Box Theatre">
                     <span class="film-title">Valentine <span class="format">35mm</span></span>
                     <a href="https://musicboxtheatre.com" class="film-venue" target="_blank" rel="noopener">Music Box Theatre</a>
                     <a href="https://musicboxtheatre.com/films-and-events/valentine" class="film-times" target="_blank" rel="noopener">11:59pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Music Box Theatre">
                     <span class="film-title">Rocky Horror Picture Show <span class="format">DCP</span></span>
                     <a href="https://musicboxtheatre.com" class="film-venue" target="_blank" rel="noopener">Music Box Theatre</a>
                     <a href="https://musicboxtheatre.com/films-and-events/rocky-horror-picture-show" class="film-times" target="_blank" rel="noopener">11:59pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">Wuthering Heights (2026)</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/wuthering-heights-2026" class="film-times" target="_blank" rel="noopener">10:00 PM, 12:00 PM, 3:30 PM, 6:00 PM, 6:15 PM, 9:30 PM</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">The Mist</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/the-mist" class="film-times" target="_blank" rel="noopener">7:00 PM</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">The Ring (2002)</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/the-ring" class="film-times" target="_blank" rel="noopener">9:45 PM</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">Nirvanna The Band The Show The Movie</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/nirvanna-the-band-the-show-the-movie" class="film-times" target="_blank" rel="noopener">10:30 PM, 11:30 AM, 2:15 PM, 5:00 PM, 7:45 PM</a>
@@ -592,109 +816,109 @@
 
             <div class="screenings">
                 
-                <div class="screening">
+                <div class="screening" data-theater="Gene Siskel Film Center">
                     <span class="film-title">My Father'S Shadow</span>
                     <a href="https://www.siskelfilmcenter.org" class="film-venue" target="_blank" rel="noopener">Gene Siskel Film Center</a>
                     <a href="https://www.siskelfilmcenter.org/my-fathers-shadow" class="film-times" target="_blank" rel="noopener">12:00 pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Gene Siskel Film Center">
                     <span class="film-title">Conversation Piece</span>
                     <a href="https://www.siskelfilmcenter.org" class="film-venue" target="_blank" rel="noopener">Gene Siskel Film Center</a>
                     <a href="https://www.siskelfilmcenter.org/conversation-piece" class="film-times" target="_blank" rel="noopener">12:30 pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Gene Siskel Film Center">
                     <span class="film-title">My Father'S Shadow</span>
                     <a href="https://www.siskelfilmcenter.org" class="film-venue" target="_blank" rel="noopener">Gene Siskel Film Center</a>
                     <a href="https://www.siskelfilmcenter.org/my-fathers-shadow" class="film-times" target="_blank" rel="noopener">2:00 pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Gene Siskel Film Center">
                     <span class="film-title">Paying For It</span>
                     <a href="https://www.siskelfilmcenter.org" class="film-venue" target="_blank" rel="noopener">Gene Siskel Film Center</a>
                     <a href="https://www.siskelfilmcenter.org/paying-it" class="film-times" target="_blank" rel="noopener">3:00 pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Gene Siskel Film Center">
                     <span class="film-title">My Father'S Shadow</span>
                     <a href="https://www.siskelfilmcenter.org" class="film-venue" target="_blank" rel="noopener">Gene Siskel Film Center</a>
                     <a href="https://www.siskelfilmcenter.org/my-fathers-shadow" class="film-times" target="_blank" rel="noopener">4:00 pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Gene Siskel Film Center">
                     <span class="film-title">Stalker</span>
                     <a href="https://www.siskelfilmcenter.org" class="film-venue" target="_blank" rel="noopener">Gene Siskel Film Center</a>
                     <a href="https://www.siskelfilmcenter.org/stalker" class="film-times" target="_blank" rel="noopener">5:15 pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Gene Siskel Film Center">
                     <span class="film-title">Two By Mike De Leon: Kisapmata</span>
                     <a href="https://www.siskelfilmcenter.org" class="film-venue" target="_blank" rel="noopener">Gene Siskel Film Center</a>
                     <a href="https://www.siskelfilmcenter.org/kisapmata" class="film-times" target="_blank" rel="noopener">6:00 pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Gene Siskel Film Center">
                     <span class="film-title">Paying For It</span>
                     <a href="https://www.siskelfilmcenter.org" class="film-venue" target="_blank" rel="noopener">Gene Siskel Film Center</a>
                     <a href="https://www.siskelfilmcenter.org/paying-it" class="film-times" target="_blank" rel="noopener">8:00 pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Gene Siskel Film Center">
                     <span class="film-title">Eternal Sunshine Of The Spotless Mind</span>
                     <a href="https://www.siskelfilmcenter.org" class="film-venue" target="_blank" rel="noopener">Gene Siskel Film Center</a>
                     <a href="https://www.siskelfilmcenter.org/eternal-sunshine" class="film-times" target="_blank" rel="noopener">8:30 pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Music Box Theatre">
                     <span class="film-title">The Princess Bride <span class="format">DCP</span></span>
                     <a href="https://musicboxtheatre.com" class="film-venue" target="_blank" rel="noopener">Music Box Theatre</a>
                     <a href="https://musicboxtheatre.com/films-and-events/the-princess-bride" class="film-times" target="_blank" rel="noopener">11:00am, 9:15pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Music Box Theatre">
                     <span class="film-title">The Miracle Woman <span class="format">DCP</span></span>
                     <a href="https://musicboxtheatre.com" class="film-venue" target="_blank" rel="noopener">Music Box Theatre</a>
                     <a href="https://musicboxtheatre.com/films-and-events/the-miracle-woman" class="film-times" target="_blank" rel="noopener">11:30am</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Music Box Theatre">
                     <span class="film-title">Nirvanna The Band The Show The Movie <span class="format">DCP</span></span>
                     <a href="https://musicboxtheatre.com" class="film-venue" target="_blank" rel="noopener">Music Box Theatre</a>
                     <a href="https://musicboxtheatre.com/films-and-events/nirvanna-the-band-the-show-the-movie" class="film-times" target="_blank" rel="noopener">1:45pm, 4:00pm, 6:30pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Music Box Theatre">
                     <span class="film-title">By Design <span class="format">DCP</span></span>
                     <a href="https://musicboxtheatre.com" class="film-venue" target="_blank" rel="noopener">Music Box Theatre</a>
                     <a href="https://musicboxtheatre.com/films-and-events/by-design" class="film-times" target="_blank" rel="noopener">2:15pm, 4:45pm, 7:15pm, 9:45pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Music Box Theatre">
                     <span class="film-title">Joe Dirt <span class="format">35mm</span></span>
                     <a href="https://musicboxtheatre.com" class="film-venue" target="_blank" rel="noopener">Music Box Theatre</a>
                     <a href="https://musicboxtheatre.com/films-and-events/joe-dirt" class="film-times" target="_blank" rel="noopener">11:59pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Music Box Theatre">
                     <span class="film-title">Valentine <span class="format">35mm</span></span>
                     <a href="https://musicboxtheatre.com" class="film-venue" target="_blank" rel="noopener">Music Box Theatre</a>
                     <a href="https://musicboxtheatre.com/films-and-events/valentine" class="film-times" target="_blank" rel="noopener">11:59pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">Wuthering Heights (2026)</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/wuthering-heights-2026" class="film-times" target="_blank" rel="noopener">10:15 PM, 11:00 AM, 11:45 AM, 2:30 PM, 3:15 PM, 6:00 PM, 6:45 PM, 9:30 PM</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">Nirvanna The Band The Show The Movie</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/nirvanna-the-band-the-show-the-movie" class="film-times" target="_blank" rel="noopener">10:30 PM, 11:30 AM, 2:15 PM, 5:00 PM, 7:45 PM</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">Twin Peaks: Fire Walk with Me</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/twin-peaks-fire-walk-with-me" class="film-times" target="_blank" rel="noopener">9:45 PM</a>
@@ -708,67 +932,67 @@
 
             <div class="screenings">
                 
-                <div class="screening">
+                <div class="screening" data-theater="Gene Siskel Film Center">
                     <span class="film-title">Come Back, Africa</span>
                     <a href="https://www.siskelfilmcenter.org" class="film-venue" target="_blank" rel="noopener">Gene Siskel Film Center</a>
                     <a href="https://www.siskelfilmcenter.org/come-back-africa" class="film-times" target="_blank" rel="noopener">12:00 pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Gene Siskel Film Center">
                     <span class="film-title">My Father'S Shadow</span>
                     <a href="https://www.siskelfilmcenter.org" class="film-venue" target="_blank" rel="noopener">Gene Siskel Film Center</a>
                     <a href="https://www.siskelfilmcenter.org/my-fathers-shadow" class="film-times" target="_blank" rel="noopener">12:15 pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Gene Siskel Film Center">
                     <span class="film-title">Stalker</span>
                     <a href="https://www.siskelfilmcenter.org" class="film-venue" target="_blank" rel="noopener">Gene Siskel Film Center</a>
                     <a href="https://www.siskelfilmcenter.org/stalker" class="film-times" target="_blank" rel="noopener">2:00 pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Gene Siskel Film Center">
                     <span class="film-title">Paying For It</span>
                     <a href="https://www.siskelfilmcenter.org" class="film-venue" target="_blank" rel="noopener">Gene Siskel Film Center</a>
                     <a href="https://www.siskelfilmcenter.org/paying-it" class="film-times" target="_blank" rel="noopener">2:15 pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Gene Siskel Film Center">
                     <span class="film-title">My Father'S Shadow</span>
                     <a href="https://www.siskelfilmcenter.org" class="film-venue" target="_blank" rel="noopener">Gene Siskel Film Center</a>
                     <a href="https://www.siskelfilmcenter.org/my-fathers-shadow" class="film-times" target="_blank" rel="noopener">4:15 pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Gene Siskel Film Center">
                     <span class="film-title">Black Harvest Encore – Blknws: Terms & Conditions</span>
                     <a href="https://www.siskelfilmcenter.org" class="film-venue" target="_blank" rel="noopener">Gene Siskel Film Center</a>
                     <a href="https://www.siskelfilmcenter.org/blknws" class="film-times" target="_blank" rel="noopener">5:15 pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Music Box Theatre">
                     <span class="film-title">Union Pacific <span class="format">35mm</span></span>
                     <a href="https://musicboxtheatre.com" class="film-venue" target="_blank" rel="noopener">Music Box Theatre</a>
                     <a href="https://musicboxtheatre.com/films-and-events/union-pacific" class="film-times" target="_blank" rel="noopener">11:30am</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Music Box Theatre">
                     <span class="film-title">By Design <span class="format">DCP</span></span>
                     <a href="https://musicboxtheatre.com" class="film-venue" target="_blank" rel="noopener">Music Box Theatre</a>
                     <a href="https://musicboxtheatre.com/films-and-events/by-design" class="film-times" target="_blank" rel="noopener">1:45pm, 4:15pm, 6:45pm, 9:15pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Music Box Theatre">
                     <span class="film-title">Nirvanna The Band The Show The Movie <span class="format">DCP</span></span>
                     <a href="https://musicboxtheatre.com" class="film-venue" target="_blank" rel="noopener">Music Box Theatre</a>
                     <a href="https://musicboxtheatre.com/films-and-events/nirvanna-the-band-the-show-the-movie" class="film-times" target="_blank" rel="noopener">2:15pm, 4:30pm, 7:00pm, 9:30pm</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">Wuthering Heights (2026)</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/wuthering-heights-2026" class="film-times" target="_blank" rel="noopener">10:15 PM, 11:00 AM, 11:45 AM, 2:30 PM, 3:15 PM, 6:00 PM, 6:45 PM, 9:30 PM</a>
                 </div>
                 
-                <div class="screening">
+                <div class="screening" data-theater="Alamo Drafthouse">
                     <span class="film-title">Nirvanna The Band The Show The Movie</span>
                     <a href="https://drafthouse.com/chicago/theater/wrigleyville" class="film-venue" target="_blank" rel="noopener">Alamo Drafthouse</a>
                     <a href="https://drafthouse.com/chicago/show/nirvanna-the-band-the-show-the-movie" class="film-times" target="_blank" rel="noopener">10:30 PM, 11:30 AM, 2:15 PM, 5:00 PM, 7:45 PM</a>
@@ -796,5 +1020,33 @@
         <p class="footer-note">Showtimes scraped from theater websites. Verify before attending.</p>
         <p class="footer-note" style="margin-top: 0.5rem;"><a href="about.html">About</a></p>
     </footer>
+
+    <script>
+        // Theater filter functionality
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const theater = btn.dataset.theater;
+
+                // Update active button
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                // Filter screenings
+                document.querySelectorAll('.screening').forEach(screening => {
+                    if (theater === 'all' || screening.dataset.theater === theater) {
+                        screening.style.display = '';
+                    } else {
+                        screening.style.display = 'none';
+                    }
+                });
+
+                // Hide empty day sections
+                document.querySelectorAll('.day-section').forEach(section => {
+                    const visible = section.querySelectorAll('.screening:not([style*="display: none"])');
+                    section.style.display = visible.length > 0 ? '' : 'none';
+                });
+            });
+        });
+    </script>
 </body>
 </html>
