@@ -241,6 +241,27 @@ main {
     color: var(--text);
 }
 
+.film-title {
+    position: relative;
+}
+
+.film-title .film-link {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.film-title .film-link:hover {
+    color: var(--accent);
+}
+
+.film-title .lb-rating {
+    font-family: var(--sans);
+    font-size: 0.6875rem;
+    font-weight: 500;
+    color: #00c030;
+    margin-left: 0.4rem;
+}
+
 .film-title .format {
     font-family: var(--sans);
     font-size: 0.6875rem;
@@ -249,6 +270,30 @@ main {
     text-transform: uppercase;
     letter-spacing: 0.03em;
     margin-left: 0.5rem;
+}
+
+.film-tooltip {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 300px;
+    max-width: 90vw;
+    padding: 0.75rem;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    font-family: var(--sans);
+    font-size: 0.8125rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--text);
+    z-index: 100;
+}
+
+.film-title:hover .film-tooltip {
+    display: block;
 }
 
 .film-venue {
