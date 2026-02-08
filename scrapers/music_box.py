@@ -1,6 +1,6 @@
 """Scraper for Music Box Theatre."""
 from bs4 import BeautifulSoup
-from .utils import make_request, parse_date, parse_time, clean_text, logger
+from .utils import make_request, parse_date, clean_text, logger
 import re
 from datetime import datetime
 
@@ -25,80 +25,70 @@ def scrape_music_box():
     soup = BeautifulSoup(resp.text, 'lxml')
     current_year = datetime.now().year
 
-    # Find all film title links (they link to /films-and-events/)
-    film_links = soup.find_all('a', href=re.compile(r'/films-and-events/'))
+    # Find all showtime blocks
+    showtime_blocks = soup.find_all(class_='programming-showtimes')
 
-    seen_films = {}  # title -> movie data
+    for block in showtime_blocks:
+        # Get the full text which contains date and times
+        text = block.get_text(strip=True)
+        if not text:
+            continue
 
-    for link in film_links:
-        title = clean_text(link.get_text())
+        # Parse date - format like "Sat, Feb 7" or "Sun, Feb 8"
+        # The date ends where the time begins (a digit followed by colon)
+        date_match = re.search(r'(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)[a-z]*,?\s*((?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s+\d{1,2})(?=\d{1,2}:|\s|$)', text, re.I)
+        if not date_match:
+            continue
 
-        # Skip short or generic titles
+        date_str = date_match.group(1)
+        date = parse_date(date_str, current_year)
+        if not date:
+            continue
+
+        # Parse times - they come after the date, separated by /
+        # Extract everything after the date
+        time_portion = text[date_match.end():]
+        # Find all times like "11:30am" or "7:00pm"
+        times = re.findall(r'(\d{1,2}:\d{2}\s*(?:am|pm))', time_portion, re.I)
+        if not times:
+            continue
+
+        # Find the associated film title
+        parent = block.find_parent(['div', 'article', 'li'])
+        if not parent:
+            continue
+
+        title_link = parent.find('a', href=re.compile(r'/films-and-events/'))
+        if not title_link:
+            continue
+
+        title = clean_text(title_link.get_text())
         if not title or len(title) < 3:
             continue
 
-        # Skip navigation links
-        skip_words = ['films', 'events', 'calendar', 'more', 'view all', 'series']
-        if title.lower() in skip_words:
-            continue
-
-        # Get the parent container to find associated times
-        parent = link.find_parent(['div', 'article', 'section', 'li'])
-        if not parent:
-            parent = link.parent
-
-        # Get full text for parsing
-        text = clean_text(parent.get_text()) if parent else title
+        # Get ticket URL
+        ticket_url = title_link.get('href', '')
+        if not ticket_url.startswith('http'):
+            ticket_url = base_url + ticket_url
 
         # Find format (35mm, 70mm, DCP, etc.)
-        format_match = re.search(r'\b(35mm|70mm|16mm|DCP|3D DCP)\b', text, re.I)
+        parent_text = parent.get_text()
+        format_match = re.search(r'\b(35mm|70mm|16mm|DCP|3D DCP)\b', parent_text, re.I)
         film_format = format_match.group(1) if format_match else None
 
-        # Find dates - look for "Mon, Feb 7" or "Feb 7" patterns
-        date_pattern = r'(?:(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)[a-z]*,?\s+)?(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s+\d{1,2}'
-        date_matches = re.findall(date_pattern, text, re.I)
+        movies.append({
+            'title': title,
+            'theater': THEATER_INFO['name'],
+            'theater_url': THEATER_INFO['url'],
+            'address': THEATER_INFO['address'],
+            'date': date,
+            'times': times,
+            'format': film_format,
+            'director': None,
+            'year': None,
+            'ticket_url': ticket_url
+        })
 
-        # Find times
-        time_matches = re.findall(r'(\d{1,2}:\d{2}\s*(?:pm|am|PM|AM))', text)
-        times = list(set([parse_time(t) for t in time_matches if t]))
-
-        # Get ticket URL
-        ticket_link = parent.find('a', href=re.compile(r'/order/')) if parent else None
-        if ticket_link:
-            ticket_url = ticket_link.get('href', '')
-            if not ticket_url.startswith('http'):
-                ticket_url = base_url + ticket_url
-        else:
-            ticket_url = base_url + link.get('href', '/calendar')
-
-        # Process each date found
-        dates_found = []
-        for dm in date_matches[:7]:  # Limit to a week
-            d = parse_date(dm, current_year)
-            if d:
-                dates_found.append(d)
-
-        if not dates_found:
-            continue  # Skip if no valid dates
-
-        # Add entries
-        for date in dates_found:
-            key = f"{title}|{date}"
-            if key not in seen_films:
-                seen_films[key] = {
-                    'title': title,
-                    'theater': THEATER_INFO['name'],
-                    'theater_url': THEATER_INFO['url'],
-                    'address': THEATER_INFO['address'],
-                    'date': date,
-                    'times': times if times else ['See website'],
-                    'format': film_format,
-                    'director': None,
-                    'year': None,
-                    'ticket_url': ticket_url
-                }
-
-    movies = list(seen_films.values())
     logger.info(f"Music Box: Found {len(movies)} screenings")
     return movies
 

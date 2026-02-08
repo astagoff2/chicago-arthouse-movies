@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-07T16:56:27.155958",
+  "last_updated": "2026-02-07T19:29:58.995975",
   "week_of": "2026-02-07",
   "movies": [
     {
@@ -577,18 +577,139 @@
       "ticket_url": "https://docfilms.org"
     },
     {
+      "title": "Kill Bill: The Whole Bloody Affair",
+      "theater": "Music Box Theatre",
+      "theater_url": "https://musicboxtheatre.com",
+      "address": "3733 N Southport Ave",
+      "date": "2026-02-07",
+      "times": [
+        "1:00pm",
+        "7:00pm"
+      ],
+      "format": "70mm",
+      "director": null,
+      "year": null,
+      "ticket_url": "https://musicboxtheatre.com/films-and-events/kill-bill-the-whole-bloody-affair"
+    },
+    {
+      "title": "The Testament of Ann Lee",
+      "theater": "Music Box Theatre",
+      "theater_url": "https://musicboxtheatre.com",
+      "address": "3733 N Southport Ave",
+      "date": "2026-02-07",
+      "times": [
+        "2:00pm",
+        "5:00pm",
+        "8:00pm"
+      ],
+      "format": "DCP",
+      "director": null,
+      "year": null,
+      "ticket_url": "https://musicboxtheatre.com/films-and-events/the-testament-of-ann-lee"
+    },
+    {
+      "title": "The Testament of Ann Lee",
+      "theater": "Music Box Theatre",
+      "theater_url": "https://musicboxtheatre.com",
+      "address": "3733 N Southport Ave",
+      "date": "2026-02-08",
+      "times": [
+        "2:00pm",
+        "5:00pm",
+        "8:00pm"
+      ],
+      "format": "DCP",
+      "director": null,
+      "year": null,
+      "ticket_url": "https://musicboxtheatre.com/films-and-events/the-testament-of-ann-lee"
+    },
+    {
+      "title": "Kill Bill: The Whole Bloody Affair",
+      "theater": "Music Box Theatre",
+      "theater_url": "https://musicboxtheatre.com",
+      "address": "3733 N Southport Ave",
+      "date": "2026-02-09",
+      "times": [
+        "1:00pm",
+        "6:30pm"
+      ],
+      "format": "70mm",
+      "director": null,
+      "year": null,
+      "ticket_url": "https://musicboxtheatre.com/films-and-events/kill-bill-the-whole-bloody-affair"
+    },
+    {
+      "title": "The Testament of Ann Lee",
+      "theater": "Music Box Theatre",
+      "theater_url": "https://musicboxtheatre.com",
+      "address": "3733 N Southport Ave",
+      "date": "2026-02-09",
+      "times": [
+        "1:15pm",
+        "4:15pm",
+        "7:30pm"
+      ],
+      "format": "DCP",
+      "director": null,
+      "year": null,
+      "ticket_url": "https://musicboxtheatre.com/films-and-events/the-testament-of-ann-lee"
+    },
+    {
+      "title": "Arco",
+      "theater": "Music Box Theatre",
+      "theater_url": "https://musicboxtheatre.com",
+      "address": "3733 N Southport Ave",
+      "date": "2026-02-10",
+      "times": [
+        "4:00pm"
+      ],
+      "format": "DCP",
+      "director": null,
+      "year": null,
+      "ticket_url": "https://musicboxtheatre.com/films-and-events/arco"
+    },
+    {
+      "title": "The Testament of Ann Lee",
+      "theater": "Music Box Theatre",
+      "theater_url": "https://musicboxtheatre.com",
+      "address": "3733 N Southport Ave",
+      "date": "2026-02-10",
+      "times": [
+        "4:15pm",
+        "7:30pm"
+      ],
+      "format": "DCP",
+      "director": null,
+      "year": null,
+      "ticket_url": "https://musicboxtheatre.com/films-and-events/the-testament-of-ann-lee"
+    },
+    {
       "title": "West Side Story (2021)",
       "theater": "Music Box Theatre",
       "theater_url": "https://musicboxtheatre.com",
       "address": "3733 N Southport Ave",
       "date": "2026-02-10",
       "times": [
-        "See website"
+        "7:00pm"
       ],
       "format": "DCP",
       "director": null,
       "year": null,
       "ticket_url": "https://musicboxtheatre.com/films-and-events/west-side-story-2021"
+    },
+    {
+      "title": "Arco",
+      "theater": "Music Box Theatre",
+      "theater_url": "https://musicboxtheatre.com",
+      "address": "3733 N Southport Ave",
+      "date": "2026-02-11",
+      "times": [
+        "4:00pm"
+      ],
+      "format": "DCP",
+      "director": null,
+      "year": null,
+      "ticket_url": "https://musicboxtheatre.com/films-and-events/arco"
     },
     {
       "title": "The Princess Bride",
@@ -597,12 +718,56 @@
       "address": "3733 N Southport Ave",
       "date": "2026-02-11",
       "times": [
-        "See website"
+        "6:30pm",
+        "9:00pm"
       ],
       "format": "DCP",
       "director": null,
       "year": null,
       "ticket_url": "https://musicboxtheatre.com/films-and-events/the-princess-bride"
+    },
+    {
+      "title": "The Testament of Ann Lee",
+      "theater": "Music Box Theatre",
+      "theater_url": "https://musicboxtheatre.com",
+      "address": "3733 N Southport Ave",
+      "date": "2026-02-11",
+      "times": [
+        "8:30pm"
+      ],
+      "format": "DCP",
+      "director": null,
+      "year": null,
+      "ticket_url": "https://musicboxtheatre.com/films-and-events/the-testament-of-ann-lee"
+    },
+    {
+      "title": "Arco",
+      "theater": "Music Box Theatre",
+      "theater_url": "https://musicboxtheatre.com",
+      "address": "3733 N Southport Ave",
+      "date": "2026-02-12",
+      "times": [
+        "4:00pm"
+      ],
+      "format": "DCP",
+      "director": null,
+      "year": null,
+      "ticket_url": "https://musicboxtheatre.com/films-and-events/arco"
+    },
+    {
+      "title": "The Testament of Ann Lee",
+      "theater": "Music Box Theatre",
+      "theater_url": "https://musicboxtheatre.com",
+      "address": "3733 N Southport Ave",
+      "date": "2026-02-12",
+      "times": [
+        "4:15pm",
+        "7:15pm"
+      ],
+      "format": "DCP",
+      "director": null,
+      "year": null,
+      "ticket_url": "https://musicboxtheatre.com/films-and-events/the-testament-of-ann-lee"
     },
     {
       "title": "Lady Windermere's Fan",
@@ -611,7 +776,7 @@
       "address": "3733 N Southport Ave",
       "date": "2026-02-12",
       "times": [
-        "See website"
+        "7:30pm"
       ],
       "format": "35mm",
       "director": null,
@@ -625,7 +790,10 @@
       "address": "3733 N Southport Ave",
       "date": "2026-02-13",
       "times": [
-        "See website"
+        "2:00pm",
+        "4:15pm",
+        "6:45pm",
+        "9:15pm"
       ],
       "format": "DCP",
       "director": null,
@@ -639,12 +807,29 @@
       "address": "3733 N Southport Ave",
       "date": "2026-02-13",
       "times": [
-        "See website"
+        "2:15pm",
+        "4:45pm",
+        "7:15pm",
+        "9:45pm"
       ],
       "format": "DCP",
       "director": null,
       "year": null,
       "ticket_url": "https://musicboxtheatre.com/films-and-events/by-design"
+    },
+    {
+      "title": "Music Box Bingo",
+      "theater": "Music Box Theatre",
+      "theater_url": "https://musicboxtheatre.com",
+      "address": "3733 N Southport Ave",
+      "date": "2026-02-13",
+      "times": [
+        "7:00pm"
+      ],
+      "format": null,
+      "director": null,
+      "year": null,
+      "ticket_url": "https://musicboxtheatre.com/films-and-events/music-box-bingo"
     },
     {
       "title": "Valentine",
@@ -653,12 +838,88 @@
       "address": "3733 N Southport Ave",
       "date": "2026-02-13",
       "times": [
-        "See website"
+        "11:59pm"
       ],
       "format": "35mm",
       "director": null,
       "year": null,
       "ticket_url": "https://musicboxtheatre.com/films-and-events/valentine"
+    },
+    {
+      "title": "Rocky Horror Picture Show",
+      "theater": "Music Box Theatre",
+      "theater_url": "https://musicboxtheatre.com",
+      "address": "3733 N Southport Ave",
+      "date": "2026-02-13",
+      "times": [
+        "11:59pm"
+      ],
+      "format": "DCP",
+      "director": null,
+      "year": null,
+      "ticket_url": "https://musicboxtheatre.com/films-and-events/rocky-horror-picture-show"
+    },
+    {
+      "title": "The Princess Bride",
+      "theater": "Music Box Theatre",
+      "theater_url": "https://musicboxtheatre.com",
+      "address": "3733 N Southport Ave",
+      "date": "2026-02-14",
+      "times": [
+        "11:00am",
+        "9:15pm"
+      ],
+      "format": "DCP",
+      "director": null,
+      "year": null,
+      "ticket_url": "https://musicboxtheatre.com/films-and-events/the-princess-bride"
+    },
+    {
+      "title": "The Miracle Woman",
+      "theater": "Music Box Theatre",
+      "theater_url": "https://musicboxtheatre.com",
+      "address": "3733 N Southport Ave",
+      "date": "2026-02-14",
+      "times": [
+        "11:30am"
+      ],
+      "format": "DCP",
+      "director": null,
+      "year": null,
+      "ticket_url": "https://musicboxtheatre.com/films-and-events/the-miracle-woman"
+    },
+    {
+      "title": "Nirvanna The Band The Show The Movie",
+      "theater": "Music Box Theatre",
+      "theater_url": "https://musicboxtheatre.com",
+      "address": "3733 N Southport Ave",
+      "date": "2026-02-14",
+      "times": [
+        "1:45pm",
+        "4:00pm",
+        "6:30pm"
+      ],
+      "format": "DCP",
+      "director": null,
+      "year": null,
+      "ticket_url": "https://musicboxtheatre.com/films-and-events/nirvanna-the-band-the-show-the-movie"
+    },
+    {
+      "title": "By Design",
+      "theater": "Music Box Theatre",
+      "theater_url": "https://musicboxtheatre.com",
+      "address": "3733 N Southport Ave",
+      "date": "2026-02-14",
+      "times": [
+        "2:15pm",
+        "4:45pm",
+        "7:15pm",
+        "9:45pm"
+      ],
+      "format": "DCP",
+      "director": null,
+      "year": null,
+      "ticket_url": "https://musicboxtheatre.com/films-and-events/by-design"
     },
     {
       "title": "Joe Dirt",
@@ -667,12 +928,26 @@
       "address": "3733 N Southport Ave",
       "date": "2026-02-14",
       "times": [
-        "See website"
+        "11:59pm"
       ],
       "format": "35mm",
       "director": null,
       "year": null,
       "ticket_url": "https://musicboxtheatre.com/films-and-events/joe-dirt"
+    },
+    {
+      "title": "Valentine",
+      "theater": "Music Box Theatre",
+      "theater_url": "https://musicboxtheatre.com",
+      "address": "3733 N Southport Ave",
+      "date": "2026-02-14",
+      "times": [
+        "11:59pm"
+      ],
+      "format": "35mm",
+      "director": null,
+      "year": null,
+      "ticket_url": "https://musicboxtheatre.com/films-and-events/valentine"
     },
     {
       "title": "The Secret Agent (Subtitled)",
@@ -687,7 +962,7 @@
       "format": null,
       "director": null,
       "year": null,
-      "ticket_url": "https://58699.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=52647&PLACEID=7"
+      "ticket_url": "https://thelogantheatre.com/showtimes"
     },
     {
       "title": "Bugonia",
@@ -733,7 +1008,7 @@
       "format": null,
       "director": null,
       "year": null,
-      "ticket_url": "https://58699.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=52643&PLACEID=8"
+      "ticket_url": "https://58699.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=52644&PLACEID=8"
     },
     {
       "title": "Send Help",
@@ -751,7 +1026,7 @@
       "format": null,
       "director": null,
       "year": null,
-      "ticket_url": "https://58699.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=52649&PLACEID=6"
+      "ticket_url": "https://58699.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=52651&PLACEID=6"
     },
     {
       "title": "Iron Lung",
@@ -782,7 +1057,7 @@
       "format": null,
       "director": null,
       "year": null,
-      "ticket_url": "https://58699.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=52653&PLACEID=9"
+      "ticket_url": "https://thelogantheatre.com/showtimes"
     },
     {
       "title": "28 Years Later: The Bone Temple",
@@ -791,7 +1066,6 @@
       "address": "3519 N Clark St",
       "date": "2026-02-07",
       "times": [
-        "6:30 PM",
         "9:45 PM"
       ],
       "format": null,
@@ -1231,7 +1505,6 @@
       "address": "3519 N Clark St",
       "date": "2026-02-07",
       "times": [
-        "6:00 PM",
         "9:30 PM"
       ],
       "format": null,
@@ -1468,8 +1741,6 @@
       "date": "2026-02-07",
       "times": [
         "10:00 PM",
-        "5:00 PM",
-        "6:15 PM",
         "7:00 PM",
         "7:45 PM",
         "9:15 PM"
