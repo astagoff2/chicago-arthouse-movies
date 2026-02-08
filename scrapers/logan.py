@@ -7,7 +7,7 @@ from datetime import datetime
 
 THEATER_INFO = {
     'name': 'Logan Theatre',
-    'url': 'https://thelogantheatre.com',
+    'url': 'https://www.thelogantheatre.com',
     'address': '2646 N Milwaukee Ave'
 }
 
@@ -15,9 +15,9 @@ THEATER_INFO = {
 def scrape_logan():
     """Scrape Logan Theatre schedule."""
     movies = []
-    base_url = 'https://thelogantheatre.com'
+    base_url = 'https://www.thelogantheatre.com'
 
-    resp = make_request(f'{base_url}/showtimes')
+    resp = make_request(f'{base_url}/?p=showtimes')
     if not resp:
         resp = make_request(base_url)
 
