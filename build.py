@@ -6,6 +6,12 @@ import sys
 from datetime import datetime, timedelta
 from collections import defaultdict
 from pathlib import Path
+try:
+    from zoneinfo import ZoneInfo
+except ImportError:
+    from backports.zoneinfo import ZoneInfo
+
+CHICAGO_TZ = ZoneInfo('America/Chicago')
 
 from jinja2 import Environment, FileSystemLoader
 
@@ -34,7 +40,7 @@ def format_day(date_str):
 
 def filter_to_week(movies):
     """Filter movies to only include this week (next 7 days)."""
-    today = datetime.now().date()
+    today = datetime.now(CHICAGO_TZ).date()
     week_end = today + timedelta(days=7)
 
     filtered = []
@@ -142,7 +148,7 @@ def generate_html(movies, template_dir, output_path):
     theaters = sorted(set(m['theater'] for m in movies))
 
     # Get tonight's movies
-    today = datetime.now().strftime('%Y-%m-%d')
+    today = datetime.now(CHICAGO_TZ).strftime('%Y-%m-%d')
     tonight_movies = [m for m in movies if m['date'] == today]
 
     html = template.render(
