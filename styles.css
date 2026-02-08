@@ -31,7 +31,7 @@ body {
     position: relative;
 }
 
-/* Background Image */
+/* Rotating Background Images */
 body::before {
     content: '';
     position: fixed;
@@ -44,6 +44,25 @@ body::before {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    animation: crossfade 32s ease-in-out infinite;
+}
+
+@keyframes crossfade {
+    0%, 22% {
+        background-image: url('https://images.squarespace-cdn.com/content/v1/5403d729e4b0903f2ff85444/1618950305546-QR2QO40JXWD3VTVYJPLI/image.jpeg?format=2500w');
+    }
+    25%, 47% {
+        background-image: url('https://static.life.com/wp-content/uploads/migrated/2014/06/140606-chicago-01-1024x801.jpg');
+    }
+    50%, 72% {
+        background-image: url('https://static.life.com/wp-content/uploads/migrated/2014/06/140606-chicago-05-1024x819.jpg');
+    }
+    75%, 97% {
+        background-image: url('https://static.life.com/wp-content/uploads/migrated/2014/06/140606-chicago-091.jpg');
+    }
+    100% {
+        background-image: url('https://images.squarespace-cdn.com/content/v1/5403d729e4b0903f2ff85444/1618950305546-QR2QO40JXWD3VTVYJPLI/image.jpeg?format=2500w');
+    }
 }
 
 /* Header */
