@@ -1,8 +1,8 @@
-# Chicago Art House Cinema
+# Third Coast Cinema
 
 A website showing weekly movie schedules from Chicago's independent and repertory theaters.
 
-**Live site:** https://astagoff2.github.io/chicago-arthouse-movies/
+**Live site:** https://astagoff2.github.io/third-coast-cinema/
 
 ## Theaters
 
@@ -28,7 +28,7 @@ A website showing weekly movie schedules from Chicago's independent and repertor
 ## Project Structure
 
 ```
-chicago-arthouse-movies/
+third-coast-cinema/
 ├── scrapers/
 │   ├── __init__.py
 │   ├── siskel.py      # Playwright-based

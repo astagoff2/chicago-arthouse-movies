@@ -38,15 +38,6 @@
     "description": "Middle-aged and erratic, Oscar is a failed writer who has given up on life. Unemployed and living with family, he wanders the streets of Medell\u00edn in a drunken stupor, lamenting the state of literature",
     "poster": "https://s.ltrbxd.com/static/img/empty-poster-1000-CR2Xn85D.png"
   },
-  "Hyenas": {
-    "letterboxd_url": "https://letterboxd.com/film/hyenas/",
-    "title": "Hyenas",
-    "director": "Eric Weston",
-    "rating": "2.64",
-    "tagline": "The Legend Is Real...",
-    "description": "Roving clans of shape-shifting human/hyena creatures prowl and hunt for human prey. They are hunted by one man seeking revenge for the death of his loved ones.",
-    "poster": "https://s.ltrbxd.com/static/img/empty-poster-1000-CR2Xn85D.png"
-  },
   "Thx 1138 \u2013 Director'S Cut": null,
   "Black Harvest Encore \u2013 Blknws: Terms & Conditions": null,
   "Come Back, Africa": {
@@ -234,7 +225,6 @@
     "description": "Joe Dirt is a janitor with a mullet hairdo, acid-washed jeans and a dream to find the parents that he lost at the Grand Canyon when he was a belligerent, trailer park-raised eight-year-old. Now, blast",
     "poster": "https://s.ltrbxd.com/static/img/empty-poster-1000-CR2Xn85D.png"
   },
-  "The Secret Agent (Subtitled)": null,
   "Bugonia": {
     "letterboxd_url": "https://letterboxd.com/film/bugonia/",
     "title": "Bugonia",
@@ -296,15 +286,6 @@
     "rating": "3.95",
     "tagline": "Fear is the new faith.",
     "description": "Dr. Kelson finds himself in a shocking new relationship - with consequences that could change the world as they know it - and Spike's encounter with Jimmy Crystal becomes a nightmare he can't escape.",
-    "poster": "https://s.ltrbxd.com/static/img/empty-poster-1000-CR2Xn85D.png"
-  },
-  "The Phantom of the Opera (2004)": {
-    "letterboxd_url": "https://letterboxd.com/film/the-phantom-of-the-opera/",
-    "title": "The Phantom of the Opera",
-    "director": "Rupert Julian",
-    "rating": "3.74",
-    "tagline": "The greatest horror film of modern cinema!",
-    "description": "The deformed Phantom who haunts the Paris Opera House causes murder and mayhem in an attempt to make the woman he loves a star.",
     "poster": "https://s.ltrbxd.com/static/img/empty-poster-1000-CR2Xn85D.png"
   },
   "Wuthering Heights (2026)": {
@@ -442,6 +423,42 @@
     "rating": null,
     "tagline": null,
     "description": "Two strippers, Lucky and Ronnie, befriend one another. Following sexual drama, Ronnie allegedly kills her boyfriend. Two homicide detectives try to put the pieces together, quizzing Lucky as to what r",
+    "poster": "https://s.ltrbxd.com/static/img/empty-poster-1000-CR2Xn85D.png"
+  },
+  "The Phantom of the Opera|2004": {
+    "letterboxd_url": "https://letterboxd.com/film/the-phantom-of-the-opera-2004/",
+    "title": "The Phantom of the Opera",
+    "director": "Joel Schumacher",
+    "rating": "3.63",
+    "tagline": "The film. The classic musical comes to the big screen for the first time.",
+    "description": "A young soprano becomes the obsession of a disfigured and murderous musical genius who lives beneath the Paris Opera House.",
+    "poster": "https://s.ltrbxd.com/static/img/empty-poster-1000-CR2Xn85D.png"
+  },
+  "Hyenas|1992": {
+    "letterboxd_url": "https://letterboxd.com/film/hyenas-1992/",
+    "title": "Hyenas",
+    "director": "Djibril Diop Mamb\u00e9ty",
+    "rating": "4.06",
+    "tagline": null,
+    "description": "A now-rich woman returns to her poor desert hometown to propose a deal to the populace: her fortune, in exchange for the death of the man who years earlier abandoned her and left her with his child.",
+    "poster": "https://s.ltrbxd.com/static/img/empty-poster-1000-CR2Xn85D.png"
+  },
+  "Secret Agent|1947": {
+    "letterboxd_url": "https://letterboxd.com/film/secret-agent-1947/",
+    "title": "Secret Agent",
+    "director": "Boris Barnet",
+    "rating": null,
+    "tagline": null,
+    "description": "Soviet agent Fedotov is air-dropped into Nazi occupied land. He changes over into Mr. Ekhert, a German entrepreneur wishing to take advantage of eastern worker slave labor in occupied Ukraine. Ekhert ",
+    "poster": "https://s.ltrbxd.com/static/img/empty-poster-1000-CR2Xn85D.png"
+  },
+  "The Secret Agent|2025": {
+    "letterboxd_url": "https://letterboxd.com/film/the-secret-agent-2025/",
+    "title": "The Secret Agent",
+    "director": "Kleber Mendon\u00e7a Filho",
+    "rating": "3.88",
+    "tagline": "Brazil 1977, a time of great mischief.",
+    "description": "In 1977 Brazil, technology specialist Marcelo, fleeing a mysterious past, returns to Recife in search of peace, but realizes the city is far from the refuge he seeks.",
     "poster": "https://s.ltrbxd.com/static/img/empty-poster-1000-CR2Xn85D.png"
   }
 }
