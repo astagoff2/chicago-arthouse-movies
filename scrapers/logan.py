@@ -1,8 +1,14 @@
-"""Scraper for Logan Theatre."""
+"""Scraper for Logan Theatre using Playwright."""
 from bs4 import BeautifulSoup
-from .utils import make_request, parse_time, clean_text, logger
+from .utils import parse_time, logger
 import re
 from datetime import datetime
+
+try:
+    from playwright.sync_api import sync_playwright
+    PLAYWRIGHT_AVAILABLE = True
+except ImportError:
+    PLAYWRIGHT_AVAILABLE = False
 
 
 THEATER_INFO = {
@@ -13,69 +19,78 @@ THEATER_INFO = {
 
 
 def scrape_logan():
-    """Scrape Logan Theatre schedule."""
+    """Scrape Logan Theatre schedule using Playwright."""
     movies = []
     base_url = 'https://www.thelogantheatre.com'
 
-    resp = make_request(f'{base_url}/?p=showtimes')
-    if not resp:
-        resp = make_request(base_url)
-
-    if not resp:
-        logger.error("Failed to fetch Logan Theatre")
+    if not PLAYWRIGHT_AVAILABLE:
+        logger.error("Playwright not available for Logan Theatre")
         return movies
 
-    soup = BeautifulSoup(resp.text, 'lxml')
-    today = datetime.now().strftime('%Y-%m-%d')
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True)
+            page = browser.new_page()
+            page.goto(f'{base_url}/?p=showtimes', timeout=30000)
+            page.wait_for_load_state('networkidle', timeout=15000)
 
-    # Find moviepad elements
-    movie_pads = soup.find_all(class_='moviepad')
+            html = page.content()
+            browser.close()
 
-    for pad in movie_pads:
-        # Title is in the img tag's title attribute
-        img = pad.find('img')
-        if not img:
-            continue
+        soup = BeautifulSoup(html, 'lxml')
+        today = datetime.now().strftime('%Y-%m-%d')
 
-        title = img.get('title', '').strip()
-        if not title:
-            # Try alt attribute
-            title = img.get('alt', '').strip()
-        if not title:
-            continue
+        # Find moviepad elements
+        movie_pads = soup.find_all(class_='moviepad')
 
-        # Find showtimes
-        showtime_links = pad.find_all('a', href=True)
-        times = []
-        for link in showtime_links:
-            link_text = link.get_text().strip()
-            # Match time patterns like "1:00p" or "7:30p"
-            if re.match(r'\d{1,2}:\d{2}[ap]', link_text, re.I):
-                time_normalized = parse_time(link_text + 'm')
-                if time_normalized and time_normalized not in times:
-                    times.append(time_normalized)
+        for pad in movie_pads:
+            # Title is in the img tag's title attribute
+            img = pad.find('img')
+            if not img:
+                continue
 
-        if not times:
-            continue
+            title = img.get('title', '').strip()
+            if not title:
+                title = img.get('alt', '').strip()
+            if not title:
+                continue
 
-        # Get ticket URL
-        ticket_link = pad.find('a', href=re.compile(r'formovietickets|ticket'))
-        ticket_url = ticket_link['href'] if ticket_link else f'{base_url}/showtimes'
+            # Find showtimes
+            showtime_links = pad.find_all('a', href=True)
+            times = []
+            for link in showtime_links:
+                link_text = link.get_text().strip()
+                # Match time patterns like "1:00p" or "7:30p"
+                if re.match(r'\d{1,2}:\d{2}[ap]', link_text, re.I):
+                    time_normalized = parse_time(link_text + 'm')
+                    if time_normalized and time_normalized not in times:
+                        times.append(time_normalized)
 
-        movies.append({
-            'title': title,
-            'theater': THEATER_INFO['name'],
-            'theater_url': THEATER_INFO['url'],
-            'address': THEATER_INFO['address'],
-            'date': today,
-            'times': times,
-            'format': None,
-            'director': None,
-            'year': None,
-            'ticket_url': ticket_url
-        })
+            if not times:
+                continue
 
-    logger.info(f"Logan Theatre: Found {len(movies)} screenings")
+            # Get ticket URL
+            ticket_link = pad.find('a', href=re.compile(r'formovietickets|ticket'))
+            ticket_url = ticket_link['href'] if ticket_link else f'{base_url}/?p=showtimes'
+
+            movies.append({
+                'title': title,
+                'theater': THEATER_INFO['name'],
+                'theater_url': THEATER_INFO['url'],
+                'address': THEATER_INFO['address'],
+                'date': today,
+                'times': times,
+                'format': None,
+                'director': None,
+                'year': None,
+                'ticket_url': ticket_url
+            })
+
+        logger.info(f"Logan Theatre: Found {len(movies)} screenings")
+
+    except Exception as e:
+        logger.error(f"Failed to scrape Logan Theatre: {e}")
+
     return movies
 
 
