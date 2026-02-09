@@ -151,12 +151,15 @@ def generate_html(movies, template_dir, output_path):
     today = datetime.now(CHICAGO_TZ).strftime('%Y-%m-%d')
     tonight_movies = [m for m in movies if m['date'] == today]
 
+    # Exclude today from movies_by_date since it's in the Today section
+    movies_by_date_excluding_today = {k: v for k, v in movies_by_date.items() if k != today}
+
     html = template.render(
-        movies_by_date=movies_by_date,
+        movies_by_date=movies_by_date_excluding_today,
         theaters=theaters,
         tonight_movies=tonight_movies,
-        week_of=datetime.now().strftime('%B %-d, %Y'),
-        last_updated=datetime.now().strftime('%B %-d at %-I:%M %p')
+        week_of=datetime.now(CHICAGO_TZ).strftime('%B %-d, %Y'),
+        last_updated=datetime.now(CHICAGO_TZ).strftime('%B %-d at %-I:%M %p')
     )
 
     with open(output_path, 'w') as f:
@@ -177,7 +180,7 @@ def main():
     site_dir.mkdir(exist_ok=True)
 
     print("=" * 50)
-    print("Chicago Art House Cinema - Build")
+    print("Third Coast Cinema - Build")
     print("=" * 50)
     print()
 
