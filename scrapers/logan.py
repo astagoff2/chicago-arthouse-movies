@@ -1,14 +1,9 @@
-"""Scraper for Logan Theatre using Playwright with stealth."""
+"""Scraper for Logan Theatre using requests."""
 from bs4 import BeautifulSoup
 from .utils import parse_time, logger
+import requests
 import re
 from datetime import datetime
-
-try:
-    from playwright.sync_api import sync_playwright
-    PLAYWRIGHT_AVAILABLE = True
-except ImportError:
-    PLAYWRIGHT_AVAILABLE = False
 
 
 THEATER_INFO = {
@@ -19,60 +14,45 @@ THEATER_INFO = {
 
 
 def scrape_logan():
-    """Scrape Logan Theatre schedule using Playwright with stealth settings."""
+    """Scrape Logan Theatre schedule using requests with custom session."""
     movies = []
     base_url = 'https://www.thelogantheatre.com'
 
-    if not PLAYWRIGHT_AVAILABLE:
-        logger.error("Playwright not available for Logan Theatre")
-        return movies
-
     try:
-        with sync_playwright() as p:
-            # Launch with more stealth-like settings
-            browser = p.chromium.launch(
-                headless=True,
-                args=[
-                    '--disable-blink-features=AutomationControlled',
-                    '--no-sandbox',
-                    '--disable-dev-shm-usage'
-                ]
-            )
+        # Create a session with specific settings
+        session = requests.Session()
 
-            # Create context with realistic browser fingerprint
-            context = browser.new_context(
-                viewport={'width': 1920, 'height': 1080},
-                user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
-                locale='en-US',
-                timezone_id='America/Chicago'
-            )
+        # Set headers that mimic a real browser
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
+            'Accept-Language': 'en-US,en;q=0.9',
+            'Accept-Encoding': 'gzip, deflate, br',
+            'Connection': 'keep-alive',
+            'Upgrade-Insecure-Requests': '1',
+            'Sec-Fetch-Dest': 'document',
+            'Sec-Fetch-Mode': 'navigate',
+            'Sec-Fetch-Site': 'none',
+            'Sec-Fetch-User': '?1',
+            'Cache-Control': 'max-age=0',
+        }
 
-            page = context.new_page()
+        # First request to get cookies
+        session.get(base_url, headers=headers, timeout=30)
 
-            # Navigate to the page
-            page.goto(f'{base_url}/?p=showtimes', timeout=60000, wait_until='networkidle')
+        # Now get the showtimes page
+        resp = session.get(f'{base_url}/?p=showtimes', headers=headers, timeout=30)
 
-            # Additional wait for dynamic content
-            page.wait_for_timeout(3000)
+        if resp.status_code != 200:
+            logger.error(f"Logan Theatre: Got status code {resp.status_code}")
+            return movies
 
-            # Try to find moviepad, if not found wait more
-            moviepad_count = page.locator('.moviepad').count()
-            if moviepad_count == 0:
-                logger.warning("Logan Theatre: No moviepad found initially, waiting longer...")
-                page.wait_for_timeout(5000)
-                moviepad_count = page.locator('.moviepad').count()
-
-            logger.info(f"Logan Theatre: Found {moviepad_count} moviepad elements via Playwright")
-
-            html = page.content()
-            context.close()
-            browser.close()
-
-        soup = BeautifulSoup(html, 'lxml')
+        soup = BeautifulSoup(resp.text, 'lxml')
         today = datetime.now().strftime('%Y-%m-%d')
 
         # Find moviepad elements
         movie_pads = soup.find_all(class_='moviepad')
+        logger.info(f"Logan Theatre: Found {len(movie_pads)} moviepad elements")
 
         for pad in movie_pads:
             # Title is in the img tag's title attribute
@@ -86,8 +66,8 @@ def scrape_logan():
             if not title:
                 continue
 
-            # Find showtimes
-            showtime_links = pad.find_all('a', href=True)
+            # Find showtimes from formovietickets links
+            showtime_links = pad.find_all('a', href=re.compile(r'formovietickets'))
             times = []
             for link in showtime_links:
                 link_text = link.get_text().strip()
@@ -100,9 +80,8 @@ def scrape_logan():
             if not times:
                 continue
 
-            # Get ticket URL
-            ticket_link = pad.find('a', href=re.compile(r'formovietickets|ticket'))
-            ticket_url = ticket_link['href'] if ticket_link else f'{base_url}/?p=showtimes'
+            # Get first ticket URL
+            ticket_url = showtime_links[0]['href'] if showtime_links else f'{base_url}/?p=showtimes'
 
             movies.append({
                 'title': title,
