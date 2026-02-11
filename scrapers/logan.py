@@ -31,8 +31,21 @@ def scrape_logan():
         with sync_playwright() as p:
             browser = p.chromium.launch(headless=True)
             page = browser.new_page()
-            page.goto(f'{base_url}/?p=showtimes', timeout=30000)
-            page.wait_for_load_state('networkidle', timeout=15000)
+
+            # Set a realistic viewport
+            page.set_viewport_size({"width": 1280, "height": 800})
+
+            page.goto(f'{base_url}/?p=showtimes', timeout=45000)
+
+            # Wait for page to be fully loaded
+            page.wait_for_load_state('domcontentloaded', timeout=30000)
+
+            # Wait specifically for moviepad elements to appear
+            try:
+                page.wait_for_selector('.moviepad', timeout=20000)
+            except:
+                logger.warning("Logan Theatre: moviepad not found, trying alternative wait")
+                page.wait_for_timeout(5000)  # Fallback wait
 
             html = page.content()
             browser.close()
@@ -42,6 +55,7 @@ def scrape_logan():
 
         # Find moviepad elements
         movie_pads = soup.find_all(class_='moviepad')
+        logger.info(f"Logan Theatre: Found {len(movie_pads)} moviepad elements")
 
         for pad in movie_pads:
             # Title is in the img tag's title attribute
